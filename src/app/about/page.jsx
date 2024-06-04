@@ -29,14 +29,14 @@ function HeroSection (){
 
 function WhoWeAre() {
     return(
-        <div className="bg-neutral-10 px-[5%]">
+        <div className="bg-neutral-10 p-[5%]">
 <div className="w-full">
-    <p className="text-3xl text-secondary-2 font-semibold my-4">Who we are</p>
-    <div className="bg-secondary-2 h-1 w-40"></div>
+    <p className="text-3xl text-secondary-2 font-semibold ">Who we are</p>
+    <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
     </div>
   
-<div className="flex justify-between">
-<div className="text-lg w-[45%]">
+<div className="flex justify-between flex-col lg:flex-row">
+<div className="text-lg lg:w-[45%] sm:w-full md:w-full leading-7 text-justify">
 <p >Pest-SA Pest Control serves homes and business across all of Adelaide and surrounding areas, we provide real solutions for all your domestic or commercial pest control needs. Specializing in termite management and inspections. We also provide reliable pre-purchase inspections and pre-building termite management systems.</p>
 <p>Our service begins with extensive pest inspections of the entire property and surrounding area. This thoroughness is key to everything we do. It helps us identify the root problems as well as allowing us to completely eliminate the infestation. We believe in treating the root cause rather than just the symptoms. We are experts in spotting both the telltale signs of pests as well as the hidden sources not easily noticed. Some pests can be almost impossible to trace. But through our methods we will discover the heart of the infestation and tackle it appropriately.</p>
 <p >We are fully insured, licensed and accredited. We utilize all of the specialist equipment and materials required to tailor our services to suit your needs. As a family owned business, we have worked with each other for a long period of time. Our focus is on building friendly customer based services, which always put you first. The team’s reputation is a result of our ability to make our customers happy with the outcome, as well as the way we deliver them.</p>
@@ -55,25 +55,27 @@ function WhoWeAre() {
 
 function WhyUs() {
     return(
-        <div className=" px-[5%]">
+        <div className=" p-[5%]">
 
   
-<div className="flex justify-between">
+<div className="flex justify-between flex-col lg:flex-row">
 <div className="flex items-center justify-start">
     <img src="/about-whyus.png" /> 
     </div>
-<div className="text-lg w-[45%]">
+<div className="text-lg lg:w-[45%] sm:w-full md:w-full">
 <div className="w-full">
-    <p className="text-3xl text-secondary-2 font-semibold my-4">Why us</p>
-    <div className="bg-secondary-2 h-1 w-40"></div>
+    <p className="text-3xl text-secondary-2 font-semibold ">Why us</p>
+    <div className="bg-secondary-2 h-1 w-30 mt-3 mb-6"></div>
     </div>
-    <p>1. Reliable,friendly and punctual service</p>
+  <div className="leading-10 text-justify">
+      <p>1. Reliable,friendly and punctual service</p>
 <p>2. Highly trained and certified technician</p>
 <p>3. We are Fully License and Insured</p>
 <p>4. An Integrated pest management approach to pest control</p>
 <p>5. Warranties on most of our servises</p>
 <p>6. The Safety of our employees,customers, and the environment is always our first priority. As Certified pest control company, We take the responsibility seriously.</p>
 <p>7. We strive to be on the fore-front of new technologies, techniques and products that will enable us to deliver our services in more efficient manner. The more effective and successful we'll be at managing your pest related problems.</p>
+  </div>
 
 </div>
 
@@ -86,17 +88,19 @@ function WhyUs() {
 
 function OurMission(){
     return(
-        <div className="bg-neutral-10 px-[5%]">
+        <div className="bg-neutral-10 p-[5%]">
       
           
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col lg:flex-row">
             
-        <div className="text-lg w-[45%] flex flex-col justify-center">
+        <div className="text-lg lg:w-[45%] sm:w-full md:w-full flex flex-col justify-center">
         <div className="w-full ">
-            <p className="text-3xl text-secondary-2 font-semibold my-4">Our Mission</p>
-            <div className="bg-secondary-2 h-1 w-40"></div>
+            <p className="text-3xl text-secondary-2 font-semibold ">Our Mission</p>
+            <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
             </div>
-       <p>To be the customer's first choice for pest control, with highly motivated and trained staff, at all times willing to deliver exceptional professional (safe,quality,punctual,friendly) service.</p>
+      <div>
+      <p className="text-justify">To be the customer's first choice for pest control, with highly motivated and trained staff, at all times willing to deliver exceptional professional (safe,quality,punctual,friendly) service.</p>
+      </div>
         
         
         </div>
@@ -112,19 +116,21 @@ function OurMission(){
 
 function OurVision() {
     return(
-        <div className=" px-[5%]">
+        <div className=" p-[5%]">
 
   
-        <div className="flex justify-between ">
+        <div className="flex justify-between flex-col lg:flex-row">
         <div className="flex items-center justify-start">
             <img src="/about-ourvision.png" /> 
             </div>
-        <div className="text-lg w-[45%] flex flex-col justify-center">
+        <div className="text-lg lg:w-[45%] flex flex-col justify-center">
         <div className="w-full">
-            <p className="text-3xl text-secondary-2 font-semibold my-4">Our Vision</p>
-            <div className="bg-secondary-2 h-1 w-40"></div>
+            <p className="text-3xl text-secondary-2 font-semibold">Our Vision</p>
+            <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
             </div>
-            <p>We PEST-SA ADELAIDE want to be the leader in pest control Industry for the South Australia and Beyond, by providing affordable, quality and environmentally friendly service products through professional team members</p>
+        <div className="text-justify">
+        <p>We PEST-SA ADELAIDE want to be the leader in pest control Industry for the South Australia and Beyond, by providing affordable, quality and environmentally friendly service products through professional team members</p>
+        </div>
         
         </div>
         

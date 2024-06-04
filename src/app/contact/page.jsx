@@ -1,18 +1,141 @@
 "use client";
 
+import { Form, Formik } from "formik";
 import ContactUs from "../Components/Contact";
 import Footer from "../Components/Footer";
+import InputField from "../Components/FormFiled/InputField";
 import Header from "../Components/Header";
 import Navbar from "../Components/Navbar";
+import GoogleMapReact from 'google-map-react';
 
-const Contact = () =>{
-    return(
-        <div>
-        <Header/>
-        <Navbar/>
-        <ContactUs />
-      <Footer />
-     </div>
-    )
+function HeroSection() {
+  return (
+    <div className="w-full flex flex-col gap-8 items-center justify-center py-16">
+      <div>
+        <button className=" bg-secondary-9 px-6 py-2 rounded-full">
+          <sapn className="text-primary">Pest-SA</sapn> / Testominals
+        </button>
+      </div>
+      <div className="text-center">
+        <p className="text-3xl font-bold ">Contact Pest-SA Pest control.</p>
+      </div>
+      <div className="text-center">
+        <p className="text-lg ">
+          Great Availability, Prompt & Professional, Customer Support and Cost
+          Effective{" "}
+        </p>
+      </div>
+      <div className="flex justify-center">
+        <button className=" bg-primary-3 text-white p-3 rounded-lg">
+          0477775224
+        </button>
+      </div>
+    </div>
+  );
 }
+
+function ContactForm() {
+  return (
+    <div className="flex w-full p-[5%] bg-white gap-12 h-auto">
+      <div className="border border-neutral-9 px-6 py-8 w-full">
+        <p className="text-3xl font-bold pb-6">Contact Form</p>
+        <Formik
+        // initialValues={initialStateforChapterTitle}
+        // onSubmit={handleAddTitle}
+        >
+          {({ errors, touched }) => (
+            <Form>
+              <div className="flex w-full flex-col gap-4">
+                <InputField
+                  placeholder="Enter your name"
+                  type="text"
+                  name="name"
+                  label="Name"
+                  errors={errors}
+                  touched={touched}
+                />
+                <InputField
+                  placeholder="Enter your email"
+                  type="text"
+                  name="email"
+                  label="Email"
+                  errors={errors}
+                  touched={touched}
+                  className="rounded-lg border border-primary p-2 active:border-none"
+                />
+                <InputField
+                  placeholder="Enter Phone Number"
+                  type="number"
+                  name="phoneNumber"
+                  label="Phone Number"
+                  errors={errors}
+                  touched={touched}
+                  className="rounded-lg border border-primary p-2 active:border-none"
+                />
+                <InputField
+                  placeholder="Enter subject"
+                  type="text"
+                  name="subject"
+                  label="Subject"
+                  errors={errors}
+                  touched={touched}
+                  className="rounded-lg border border-primary p-2 active:border-none"
+                />
+                <InputField
+                  placeholder="Enter message"
+                  type="text"
+                  name="message"
+                  label="Message"
+                  errors={errors}
+                  touched={touched}
+                  className="rounded-lg border border-primary p-2 active:border-none"
+                />
+              </div>
+              <div className="mt-4 flex gap-3">
+                <button>Send</button>
+              </div>
+            </Form>
+          )}
+        </Formik>
+      </div>
+
+      <div className="border w-full border-neutral-9 px-6 py-8 ">
+        <p className="text-3xl font-bold  pb-6">Connect with us</p>
+       <div className="leading-8 text-neutral-5">
+       <p>5 Limerick Street Salisbury Fowns SA5108. Australia</p>
+        <p>0477775224, 0420348484</p>
+        <p>info@pestsaadelaide.com.au</p>
+        <p>Mon-Sat: 7:00 AM - 18:00 PM</p>
+       </div>
+      </div>
+    </div>
+  );
+}
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
+
+const Contact = () => {
+  return (
+    <div>
+      <Header />
+      <Navbar />
+      <HeroSection />
+      <ContactForm />
+      <div style={{ height: '50vh', width: '100%' }}>
+        <GoogleMapReact
+          bootstrapURLKeys={{ key: "YOUR_GOOGLE_MAPS_API_KEY" }}
+          defaultCenter={{ lat: 27.7172, lng: 85.3240 }}
+          defaultZoom={11}
+        >
+          <AnyReactComponent
+            lat={27.7172}
+            lng={85.3240}
+            text="Kathmandu, Nepal"
+          />
+        </GoogleMapReact>
+      </div>
+      <ContactUs />
+      <Footer />
+    </div>
+  );
+};
 export default Contact;

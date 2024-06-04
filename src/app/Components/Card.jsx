@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function DynamicCard({ title, description, image, buttonText1, buttonText2 }) {
   return (
-    <Card sx={{ maxWidth: 345 }} className=" shadow-xl ">
+    <Card sx={{ maxWidth: 345 }} className=" shadow-xl w-full">
       <CardMedia
         component="img"
         alt="Card Image"

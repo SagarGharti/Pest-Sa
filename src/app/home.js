@@ -133,7 +133,7 @@ function WelcomeText() {
         Welcome to PEST-SA Pest Control
       </p>
       <div className="bg-secondary-2 h-1 w-60"></div>
-      <div className="w-[70%] mt-15">
+      <div className="lg:w-[70%] mt-15">
         <p className="text-center text-xl">
           Pest-SA Pest Control serves homes and businesses across all of
           Adelaide and surrounding areas. We provide real solutions for all
@@ -150,7 +150,7 @@ function WelcomeText() {
 
 function WhyPestControl() {
   return (
-    <div className="h-[722px] w-full bg-neutral-9 rounded-lg my-15 flex justify-center gap-20 items-center">
+    <div className="h-auto py-12 w-full bg-neutral-9 rounded-lg my-15 flex flex-col lg:flex-row justify-center gap-20 items-center">
       <div className="w-[60%] h-[599px]">
         <p className="text-secondary-2 text-2xl font-semibold">WHY PEST-SA ?</p>
         <div className="bg-secondary-2 h-1 w-30 m-4"></div>
@@ -199,7 +199,7 @@ function ServicesArea() {
         <p className="text-secondary-2 text-2xl font-semibold">Services Area</p>
         <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
       </div>
-      <div className="flex gap-10 my-8">
+      <div className="flex gap-10 my-8 flex-col lg:flex-row">
         <DynamicCard
           title="Residential Pest Control"
           description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... "
@@ -244,14 +244,14 @@ function Testimonials() {
     <div className="bg-[#333333] px-[5%]">
       <p className="text-white text-2xl font-semibold pt-8">Testimonials</p>
       <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
-      <div className="h-[527px] w-full flex flex-col justify-center">
-        <div className="flex gap-10 justify-center w-full">
+      <div className="h-auto w-full flex flex-col justify-center p-12">
+        <div className="flex gap-10 justify-center w-full flex-col lg:flex-row">
           <p className="text-2xl text-white w-90 self-center">
             Here’s What Our customer have to Say...
           </p>
 
-          <div className="bg-white rounded-lg w-[20%] flex justify-between flex-col p-4">
-            <div className="flex justify-between">
+          <div className="bg-white rounded-lg lg:w-[20%] flex justify-between flex-col p-4">
+            <div className="flex justify-between ">
               <div>
                 <p className="font-bold text-lg">Coretta Dossantos</p>
                 <p>CEO at Gigolo, Inc</p>
@@ -273,7 +273,7 @@ function Testimonials() {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg w-[20%] flex justify-between flex-col p-4">
+          <div className="bg-white rounded-lg lg:w-[20%] flex justify-between flex-col p-4">
             <div className="flex justify-between">
               <div>
                 <p className="font-bold text-lg">Coretta Dossantos</p>
@@ -296,7 +296,7 @@ function Testimonials() {
             </div>
           </div>
 
-          <div className="bg-white rounded-lg w-[20%] flex justify-between flex-col p-4">
+          <div className="bg-white rounded-lg lg:w-[20%] flex justify-between flex-col p-4">
             <div className="flex justify-between">
               <div>
                 <p className="font-bold text-lg">Coretta Dossantos</p>
