@@ -8,10 +8,10 @@ function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Residential", path: "/residential" },
-    { name: "Commercial", path: "/commercial" },
+    // { name: "Commercial", path: "/commercial" },
     { name: "Services", path: "/services" },
-    { name: "Testimonials", path: "/testimonials" },
-    { name: "Blog", path: "/blog" },
+    // { name: "Testimonials", path: "/testimonials" },
+    // { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -28,7 +28,8 @@ function Navbar() {
   };
 
   return (
-    <div className="relative ">
+    <div className="relative">
+    <div className="sticky top-0 z-10">
       <div className="flex items-center justify-between px-[5%] py-4 bg-white shadow-md lg:bg-white">
         <div>
           <Image src="/Logo.png" height={200} width={200} alt="Logo" />
@@ -74,6 +75,7 @@ function Navbar() {
         </div>
       )}
     </div>
+  </div>
   );
 }
 

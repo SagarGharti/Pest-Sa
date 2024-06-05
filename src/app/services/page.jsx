@@ -44,7 +44,7 @@ function HeroSection() {
 
   function ServicesArea() {
     return (
-      <div className="px-[5%]">
+      <div className="px-[5%] bg-white py-[5%]">
         <div className="w-[30%] flex flex-col">
           <p className="text-secondary-2 text-2xl font-semibold">Services Area</p>
           <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
@@ -91,16 +91,16 @@ function HeroSection() {
 
   function PestControlServices (){
     return(
-      <div className="p-[10%]">
+      <div className="px-[10%] py-[5%]">
         <div className="w-full flex flex-col items-center">
           <p className="text-secondary-2 text-2xl font-semibold">Pest Control Services</p>
           <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
         </div>
-      <div className="flex  w-full">
+      <div className="flex w-full pt-12 gap-6">
       <div className="flex flex-col gap-6" > 
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white flex justify-center items-center w-40 h-30 rounded-lg">
+           <img src="/termite.png" />
            </div>
            <div >
            <p className="text-lg font-bold">Termites Pest Control</p>
@@ -108,8 +108,8 @@ function HeroSection() {
            </div>
           </div>
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white flex justify-center items-center w-60 h-30 rounded-lg">
+           <img src="/ant.png" />
            </div>
            <div >
            <p className="text-lg font-bold">Ants Pest Control</p>
@@ -117,8 +117,8 @@ function HeroSection() {
            </div>
           </div>
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white  flex justify-center items-center  w-40 h-30 rounded-lg">
+           <img src="/bee.png" />
            </div>
            <div >
            <p className="text-lg font-bold">Bees and Wasps Control</p>
@@ -130,8 +130,8 @@ function HeroSection() {
          <div className="flex flex-col gap-6">
          
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white flex justify-center items-center w-60 h-30 rounded-lg">
+           <img src="/spider.png"/>
            </div>
            <div >
            <p className="text-lg font-bold">Spider Pest Controll</p>
@@ -139,8 +139,8 @@ function HeroSection() {
            </div>
           </div>
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white flex justify-center items-center w-60 h-30 rounded-lg">
+           <img src="/cockroach.png"/>
            </div>
            <div >
            <p className="text-lg font-bold">Cockroaches Pest Control</p>
@@ -148,8 +148,8 @@ function HeroSection() {
            </div>
           </div>
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white h-30 w-60 flex justify-center items-center rounded-lg">
+           <img src="/cockroach.png"/>
            </div>
            <div >
            <p className="text-lg font-bold">Timber Pest Control</p>
@@ -161,8 +161,8 @@ function HeroSection() {
          
           <div className="flex flex-col gap-6">
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white h-30 w-60 flex justify-center items-center rounded-lg">
+           <img src="/rat.png"/>
            </div>
            <div>
            <p className="text-lg font-bold">Rodents Pest Control</p>
@@ -170,8 +170,8 @@ function HeroSection() {
            </div>
           </div>
           <div className="flex gap-6 items-center">
-           <div className="bg-white h-30 w-30 flex justify-center items-center">
-           <img src="/termite.png" className="h-20 w-20"/>
+           <div className="bg-white h-30 w-60 flex justify-center items-center rounded-lg">
+           <img src="/pigeon.png"/>
            </div>
            <div >
            <p className="text-lg font-bold">Birds Pest Control</p>

@@ -9,17 +9,17 @@ import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import ContactUs from "./Components/Contact";
-
+import { FcGoogle } from "react-icons/fc";
 
 function HeroSection() {
   return (
     <div>
       <div
-        className=" relative bg-cover bg-center h-[526px] w-full flex items-center"
+        className="relative bg-cover bg-center pt-[7%] pb-12 w-full flex items-center "
         style={{ backgroundImage: `url('/homepage.png')` }}
       >
         <div className="absolute inset-0 bg-neutral opacity-40"></div>
-        <div className="flex justify-between items-center w-full z-10">
+        <div className="flex justify-between items-center w-full z-10 flex-col lg:flex-row">
           <div className="mx-20">
             <p className="text-5xl font-semibold text-white w-[520px] mb-4">
               Reliable Guaranteed & Affordable Pest Control
@@ -28,32 +28,42 @@ function HeroSection() {
               Show More
             </button>
           </div>
-          <div className="flex-1 flex justify-end mx-20">
+          <div className="flex-1 flex justify-end mx-20 relative">
             <div className="w-[523px] h-[349px] rounded-lg relative">
-              <div className="bg-neutral-3 absolute w-full h-[20%]">
+              <div className="bg-neutral-3 absolute w-full h-[20%] top-0 rounded-lg">
                 <p className="text-2xl text-white font-semibold text-center py-5">
                   Overall Rating
                 </p>
               </div>
-              <div className="bg-white w-full h-[80%] opacity-80 absolute bottom-0">
-                <div className="rounded-lg">
-                  <p className="text-success">Call/SMS -Instant Chat Now</p>
-
+              <div className="bg-white w-full h-[80%] opacity-85 absolute bottom-0 rounded-b-lg"></div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 py-12">
+                <div className="bg-white relative z-20 p-3 rounded-md mt-15 w-[70%]">
+                  <p className="text-primary-2 text-lg text-center font-medium">
+                    Call/SMS - Instant Chat Now
+                  </p>
+                </div>
+                <div className="flex gap-2 z-20">
+                  <IoIosCall className="h-6 w-6" />
+                  <p className="font-bold text-lg">
+                    Call Now{" "}
+                    <span className="text-primary-4">0477 775 224</span>
+                  </p>
+                </div>
+                <div className="bg-secondary-4 w-40 text-white rounded-lg flex z-20 p-2 px-6 gap-3">
+                  <p className="text-xl font-semibold">5</p>
                   <div className="flex items-center justify-center">
-                    <IoIosCall className="h-6 w-6" />
-                    <p className="font-bold">
-                      Call Now{" "}
-                      <span className="text-primary-4">0477 775 224 </span>{" "}
-                    </p>
-                  </div>
-                  <div className="bg-secondary-4 w-40 text-white rounded-lg flex">
-                    <p className="text-xl">5</p>
                     <Star />
                     <Star />
                     <Star />
                     <Star />
                     <Star />
                   </div>
+                </div>
+                <div className="flex gap-4">
+                  <p className="font-bold text-lg underline z-20">
+                    Read Reviews
+                  </p>
+                  <FcGoogle className="h-7 w-7" />
                 </div>
               </div>
             </div>
@@ -64,6 +74,7 @@ function HeroSection() {
     </div>
   );
 }
+
 function PestControlBanner() {
   return (
     <div className="w-full bg-neutral mb-12">
@@ -323,8 +334,6 @@ function Testimonials() {
     </div>
   );
 }
-
-
 
 export default function Home() {
   return (
