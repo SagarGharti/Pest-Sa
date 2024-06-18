@@ -7,7 +7,7 @@ import { IoLocationOutline, IoLogoTwitter } from "react-icons/io5";
 function Header() {
     return (
       <div>
-        <div className="bg-neutral-2 h-14 w-full flex items-center justify-between px-16">
+        <div className="bg-neutral-2 h-auto py-3 w-full flex items-center justify-between px-16">
           <div className="text-white flex gap-4 font-sans-serif">
             <div className="flex items-center gap-1">
               <IoLocationOutline className=" h-6 w-6" />

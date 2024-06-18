@@ -32,7 +32,7 @@ function HeroSection() {
         </p>
       </div>
       <div className="flex justify-center">
-        <button className=" bg-primary-3 text-white p-3 rounded-lg">
+        <button className=" bg-primary-3 text-white py-3 rounded-full px-6">
           contact us
         </button>
       </div>

@@ -338,7 +338,9 @@ function Testimonials() {
 export default function Home() {
   return (
     <div className="bg-white">
-      <Header />
+      <div className="hidden lg:block">
+        <Header />
+      </div>
       <Navbar />
       <HeroSection />
 

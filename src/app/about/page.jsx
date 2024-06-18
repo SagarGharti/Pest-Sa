@@ -21,7 +21,7 @@ function HeroSection (){
             <p className="text-lg ">customer based services, which always put you first.</p>
             </div>
           <div className="flex justify-center">
-          <button className=" bg-primary-3 text-white p-3 rounded-lg">contact us</button>
+          <button className=" bg-primary-3 text-white py-3 rounded-full px-6">contact us</button>
           </div>
         </div>
     )

@@ -26,7 +26,7 @@ function HeroSection() {
         </p>
       </div>
       <div className="flex justify-center">
-        <button className=" bg-primary-3 text-white p-3 rounded-lg">
+        <button className=" bg-primary-3 text-white py-3 rounded-full px-6">
           0477775224
         </button>
       </div>
@@ -92,7 +92,7 @@ function ContactForm() {
                 />
               </div>
               <div className="mt-4 flex gap-3">
-                <button>Send</button>
+                <button className="bg-primary-3 py-2 px-6 rounded-lg text-white">Send</button>
               </div>
             </Form>
           )}
