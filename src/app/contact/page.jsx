@@ -116,7 +116,9 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>;
 const Contact = () => {
   return (
     <div>
-      <Header />
+       <div className="hidden lg:block">
+        <Header />
+      </div>
       <Navbar />
       <HeroSection />
       <ContactForm />

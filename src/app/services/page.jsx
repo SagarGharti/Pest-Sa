@@ -197,7 +197,9 @@ function HeroSection() {
 const Services = () =>{
     return(
         <div>
-        <Header/>
+         <div className="hidden lg:block">
+        <Header />
+      </div>
         <Navbar/>
         <HeroSection/>
         <ServicesArea/>

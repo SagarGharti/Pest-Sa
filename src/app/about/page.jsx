@@ -143,7 +143,9 @@ function OurVision() {
 const About = () =>{
     return(
         <div>
-           <Header/>
+           <div className="hidden lg:block">
+        <Header />
+      </div>
            <Navbar/>
            <HeroSection/>
            <WhoWeAre/>

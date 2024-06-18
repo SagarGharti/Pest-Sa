@@ -156,8 +156,10 @@ function ResidentalOffer() {
 }
 const Residential = () => {
   return (
-    <div>
-      <Header />
+    <div>   <div className="hidden lg:block">
+    <Header />
+  </div>
+     
       <Navbar />
       <HeroSection />
       <ResidentalPestControl />
