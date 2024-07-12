@@ -24,7 +24,7 @@ export default function DynamicCard({ title, description, image, buttonText1, bu
         </Typography>
       </CardContent>
       <CardActions className='justify-between px-4'>
-        <Button size="small" className='text-neutral border border-neutral-6 '>{buttonText1}</Button>
+        <Button size="small" className='text-neutral border-neutral-3'>{buttonText1}</Button>
         <Button size="small" className='bg-primary-3 text-white'>{buttonText2}</Button>
       </CardActions>
     </Card>

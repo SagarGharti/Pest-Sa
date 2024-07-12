@@ -30,15 +30,11 @@ function Header() {
             <div className="bg-white rounded-full p-1">
               <FaFacebookF />
             </div>
-            <div className="bg-white rounded-full p-1">
-              <AiFillInstagram />
-            </div>
+           
             <div className="bg-white rounded-full p-1">
               <IoLogoTwitter />
             </div>
-            <div className="bg-white rounded-full p-1">
-              <FaYoutube />
-            </div>
+            
           </div>
         </div>
       </div>

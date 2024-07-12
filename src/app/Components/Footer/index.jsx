@@ -43,11 +43,8 @@ function Footer() {
             <div className="flex gap-4">
               <FaFacebookF />
               <IoLogoTwitter />
-              <FaLinkedinIn />
-              <FaYoutube />
-              <AiFillInstagram />
+          
             </div>
-            <p>Made with Creatt by Studios</p>
           </div>
         </div>
       </div>

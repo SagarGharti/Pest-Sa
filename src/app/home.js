@@ -12,6 +12,8 @@ import ContactUs from "./Components/Contact";
 import { FcGoogle } from "react-icons/fc";
 import { BiSolidMessageRoundedDetail } from "react-icons/bi";
 import { IoIosClose } from "react-icons/io";
+import LeftArrow from "./Components/Icon/LeftArrow";
+import RightArrow from "./Components/Icon/RightArrow";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -353,6 +355,14 @@ function Testimonials() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="flex gap-2 justify-center pt-10">
+          <button className="bg-secondary-3 px-4 py-3 rounded-lg">
+            <LeftArrow/>
+          </button>
+          <button className="bg-secondary-3 px-4 py-3 rounded-lg">
+            <RightArrow/>
+          </button>
         </div>
       </div>
     </div>
