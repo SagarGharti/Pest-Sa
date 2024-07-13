@@ -7,10 +7,22 @@ import InputField from "../Components/FormFiled/InputField";
 import Header from "../Components/Header";
 import Navbar from "../Components/Navbar";
 import GoogleMapReact from 'google-map-react';
+import Message from "../Components/Message/Message";
+import MessageForm from "../Components/MessageForm/MessageForm";
+import { useState } from "react";
 
 function HeroSection() {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const handleMessageClick = () => {
+    setIsFormOpen(!isFormOpen);
+  };
+
+  const handleCloseForm = () => {
+    setIsFormOpen(false);
+  };
   return (
-    <div className="w-full flex flex-col gap-8 items-center justify-center py-16">
+    <div className=" relative w-full flex flex-col gap-8 items-center justify-center py-16">
       <div>
         <button className=" bg-secondary-9 px-6 py-2 rounded-full">
           <sapn className="text-primary">Pest-SA</sapn> / Testominals
@@ -26,10 +38,23 @@ function HeroSection() {
         </p>
       </div>
       <div className="flex justify-center">
-        <button className=" bg-primary-3 text-white py-3 rounded-full px-6">
+        <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">
           0477775224
         </button>
       </div>
+      <div className="absolute bottom-[-30px] right-8 transform -translate-x-1/2 z-20">
+          <div className="relative" onClick={handleMessageClick}>
+            <Message />
+            <div className="absolute top-0 right-0 bg-primary-5 text-white rounded-full h-5 w-5 flex items-center justify-center">
+              <p className="text-xs">1</p>
+            </div>
+          </div>
+        </div>
+        {isFormOpen && (
+          <div className="absolute top-[-4px] right-15">
+            <MessageForm handleCloseForm={handleCloseForm} />
+          </div>
+        )}
     </div>
   );
 }
