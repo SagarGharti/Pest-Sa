@@ -6,6 +6,7 @@ import MessageForm from "../Components/MessageForm/MessageForm";
 import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
+import Link from "next/link";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -111,50 +112,54 @@ function ResidentalPestControl() {
         <div></div>
       </div>
       <div className="flex flex-col gap-8 w-[20%]">
-        <div className=" rounded-lg p-6 shadow-lg ">
+      <div className=" rounded-lg p-6 shadow-lg ">
           <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-              <p>Residental Pest Control</p>
-            </button>
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-              <p>Commercial Pest Control</p>
-            </button>
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-              <p>Termite Inspection </p>
-            </button>
-          </div>
+            <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
+            <div className="flex flex-col gap-6">
+  <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+   Residental Pest Control
+  </button>
+  <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+   Commercial Pest Control
+  </button>
+  <Link href="/termite-inspection">
+    <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
+      Termite Inspection
+    </button>
+  </Link>
+</div>
         </div>
         <div className="shadow-lg rounded-lg p-6 flex flex-col">
           <p className="text-xl">Pest Control Services</p>
-          <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Pest-SA Cockroaches</p>
+            <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
+         <div className="flex flex-col gap-6">
+         <Link href="/pest-sa-cockroaches">
+         <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+          Pest-SA Cockroaches
+          </button>
+          </Link>
+          <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+            Spider Pest Control
             </button>
             <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Spider Pest Control</p>
+            Rodents Pest Control
             </button>
             <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Rodents Pest Control</p>
+            Birds Pest Control
             </button>
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Birds Pest Control</p>
-            </button>
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Bees and Waps Control</p>
-            </button>
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Timber Pest Control</p>
-            </button>
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Pest-SA Ants Pest Control</p>
-            </button>
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              <p>Termites Pest Control</p>
-            </button>
-          </div>
+          <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+          Bees and Waps Control
+          </button>
+           <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+           Timber  Pest Control
+           </button>
+           <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+           Pest-SA Ants Pest Control
+           </button>
+           <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+           Termites Pest Control
+           </button>
+         </div>
         </div>
       </div>
     </div>
