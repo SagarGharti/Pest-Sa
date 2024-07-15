@@ -8,10 +8,7 @@ function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Residential", path: "/residential" },
-    // { name: "Commercial", path: "/commercial" },
     { name: "Services", path: "/services" },
-    // { name: "Testimonials", path: "/testimonials" },
-    // { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
 
