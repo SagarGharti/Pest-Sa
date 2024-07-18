@@ -58,11 +58,12 @@ function HeroSection() {
                 </div>
                 <div className="flex gap-2 z-20">
                   <IoIosCall className="h-6 w-6" />
-                  <p className="font-bold text-lg">
+                  <a href="tel:+0477775224" className="font-bold text-lg">
                     Call Now{" "}
                     <span className="text-primary-4">0477 775 224</span>
-                  </p>
+                  </a>
                 </div>
+
                 <div className="bg-secondary-4 w-40 text-white rounded-lg flex z-20 p-2 px-6 gap-3">
                   <p className="text-xl font-semibold">5</p>
                   <div className="flex items-center justify-center">
@@ -74,9 +75,14 @@ function HeroSection() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <p className="font-bold text-lg underline z-20">
+                  <a
+                    href="https://www.google.com/search?q=your+business+name+reviews"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-lg underline z-20"
+                  >
                     Read Reviews
-                  </p>
+                  </a>
                   <FcGoogle className="h-7 w-7" />
                 </div>
               </div>
@@ -358,10 +364,10 @@ function Testimonials() {
         </div>
         <div className="flex gap-2 justify-center pt-10">
           <button className="bg-secondary-3 px-4 py-3 rounded-lg">
-            <LeftArrow/>
+            <LeftArrow />
           </button>
           <button className="bg-secondary-3 px-4 py-3 rounded-lg">
-            <RightArrow/>
+            <RightArrow />
           </button>
         </div>
       </div>
