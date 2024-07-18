@@ -36,12 +36,10 @@ function MessageForm({ handleCloseForm }) {
             const result = await response.json();
     
             if (response.ok) {
-                alert("You will now be redirected to WhatsApp to send your message.");
-                // Open the WhatsApp chat link in the same window
-                window.location.href = result.whatsappLink;
+                alert("Your message has been sent successfully.");
                 handleCloseForm();
             } else {
-                setError(result.message || 'Failed to generate WhatsApp link');
+                setError(result.message || 'Failed to send message');
             }
         } catch (error) {
             setError(error.message || 'An error occurred');

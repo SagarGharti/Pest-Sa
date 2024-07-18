@@ -61,7 +61,7 @@ function HeroSection() {
 
 function ContactForm() {
   return (
-    <div className="flex w-full p-[5%] bg-white gap-12 h-auto">
+    <div className="flex flex-col md:flex-row w-full p-[5%] bg-white gap-12 h-auto">
       <div className="border border-neutral-9 px-6 py-8 w-full">
         <p className="text-3xl font-bold pb-6">Contact Form</p>
         <Formik
@@ -125,17 +125,18 @@ function ContactForm() {
       </div>
 
       <div className="border w-full border-neutral-9 px-6 py-8 ">
-        <p className="text-3xl font-bold  pb-6">Connect with us</p>
-       <div className="leading-8 text-neutral-5">
-       <p>5 Limerick Street Salisbury Fowns SA5108. Australia</p>
-        <p>0477775224, 0420348484</p>
-        <p>info@pestsaadelaide.com.au</p>
-        <p>Mon-Sat: 7:00 AM - 18:00 PM</p>
-       </div>
+        <p className="text-3xl font-bold pb-6">Connect with us</p>
+        <div className="leading-8 text-neutral-5">
+          <p>5 Limerick Street Salisbury Fowns SA5108. Australia</p>
+          <p>0477775224, 0420348484</p>
+          <p>info@pestsaadelaide.com.au</p>
+          <p>Mon-Sat: 7:00 AM - 18:00 PM</p>
+        </div>
       </div>
     </div>
   );
 }
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 const Contact = () => {
