@@ -92,9 +92,6 @@ function HeroSection() {
         <div className="absolute bottom-[-30px] right-8 transform -translate-x-1/2 z-20">
           <div className="relative" onClick={handleMessageClick}>
             <Message />
-            <div className="absolute top-0 right-0 bg-primary-5 text-white rounded-full h-5 w-5 flex items-center justify-center">
-              <p className="text-xs">1</p>
-            </div>
           </div>
         </div>
         {isFormOpen && (
