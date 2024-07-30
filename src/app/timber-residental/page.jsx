@@ -113,11 +113,10 @@ function ResidentalPestControl() {
   <button className="shadow-md py-3 rounded-lg border border-neutral-9">
     <p>Residental Pest Control</p>
   </button>
-<Link href="/commercial-residental">
-<button className="shadow-md py-3 rounded-lg border border-neutral-9">
+  <Link href="/commercial-residental">
+  <button className="shadow-md py-3 rounded-lg border border-neutral-9">
     <p>Commercial Pest Control</p>
-  </button>
-</Link>
+  </button></Link>
   <Link href="/termite-inspection-residental">
     <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
       <p>Termite Inspection</p>
@@ -225,7 +224,7 @@ function ResidentalOffer() {
     </div>
   );
 }
-const Residential = () => {
+const TimberResidential = () => {
   return (
     <div>   <div className="hidden lg:block">
     <Header />
@@ -240,4 +239,4 @@ const Residential = () => {
     </div>
   );
 };
-export default Residential;
+export default TimberResidential;
