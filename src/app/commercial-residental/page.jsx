@@ -104,23 +104,24 @@ function ResidentalPestControl() {
         <div></div>
       </div>
       <div className="flex flex-col gap-8 w-[20%]">
-        <div className=" rounded-lg p-6 shadow-lg ">
+        <div className=" rounded-lg p-6 w-full shadow-lg ">
           <p className="text-xl">Services Area</p>
           <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
           <div className="flex flex-col gap-6">
             <Link href="/residential">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Residental Pest Control</p>
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+              Residental Pest Control
               </button>
             </Link>
+
             <Link href="/commercial-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Commercial Pest Control</p>
+              <button className="shadow-md rounded-lg border border-neutral-9 w-full">
+                Commercial Pest Controls
               </button>
             </Link>
             <Link href="/termite-inspection-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
-                <p>Termite Inspection</p>
+              <button className="shadow-md rounded-lg border border-neutral-9 w-full">
+                Termite Inspection
               </button>
             </Link>
           </div>

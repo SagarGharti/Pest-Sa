@@ -27,12 +27,9 @@ function HeroSection() {
       </div>
       <div className="text-center">
         <p className="text-3xl font-bold ">
-          ‘We’re there for you until they are Gone’! We stand by our{" "}
+        Pest-SA Spider Pest Control.
         </p>
-        <p className="text-3xl font-bold ">
-          {" "}
-          warranties, so If the pests come back - so do we.
-        </p>
+       
       </div>
       <div className="text-center">
         <p className="text-lg ">

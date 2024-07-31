@@ -27,11 +27,7 @@ function HeroSection() {
       </div>
       <div className="text-center">
         <p className="text-3xl font-bold ">
-          ‘We’re there for you until they are Gone’! We stand by our{" "}
-        </p>
-        <p className="text-3xl font-bold ">
-          {" "}
-          warranties, so If the pests come back - so do we.
+        Pest-SA Ants Pest Control.
         </p>
       </div>
       <div className="text-center">
@@ -197,7 +193,7 @@ function ResidentalPestControl() {
           <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
           <div className="flex flex-col gap-6">
             <Link href="/residential">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+              <button className="shadow-md py-3  rounded-lg border border-neutral-9">
                 <p>Residental Pest Control</p>
               </button>
             </Link>

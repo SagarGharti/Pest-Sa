@@ -28,12 +28,9 @@ function HeroSection() {
         </div>
         <div className="text-center">
           <p className="text-3xl font-bold ">
-            ‘We’re there for you until they are Gone’! We stand by our{" "}
+          Pest-SA services where quality meets commitment.
           </p>
-          <p className="text-3xl font-bold ">
-            {" "}
-            warranties, so If the pests come back - so do we.
-          </p>
+         
         </div>
         <div className="text-center">
           <p className="text-lg ">
@@ -66,46 +63,33 @@ function HeroSection() {
 
   function ServicesArea() {
     return (
-      <div className="px-[5%] bg-white py-[5%]">
+      <div className="px-[10%] bg-white py-[5%]">
         <div className="w-[30%] flex flex-col">
           <p className="text-secondary-2 text-2xl font-semibold">Services Area</p>
           <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
         </div>
-        <div className="flex gap-10 my-8 flex-wrap lg:flex-row">
+        <div className="flex gap-15 my-8 flex-wrap lg:flex-row">
           <DynamicCard
             title="Residential Pest Control"
             description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... "
-            image="serviceArea.png"
-            buttonText1="Quote"
+            image="residental-pest.png"
             buttonText2="Show More"
           />
   
           <DynamicCard
             title="Commercial Pest Control"
-            description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
-      "
-            image="serviceArea.png"
-            buttonText1="Quote"
+            description="How we get the job done is just as important to our team, as the eradication and control of pests in your business. With a dedicated client service manager for..." 
+            image="commercial-pest.png"
             buttonText2="Show More"
           />
   
           <DynamicCard
             title="Termite Inspection"
-            description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
-      "
-            image="serviceArea.png"
-            buttonText1="Quote"
+            description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... "
+            image="termite-pest.png"
             buttonText2="Show More"
           />
   
-          <DynamicCard
-            title="Termite Inspection"
-            description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
-      "
-            image="serviceArea.png"
-            buttonText1="Quote"
-            buttonText2="Show More"
-          />
         </div>
       </div>
     );
