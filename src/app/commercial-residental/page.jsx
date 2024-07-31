@@ -108,12 +108,16 @@ function ResidentalPestControl() {
           <p className="text-xl">Services Area</p>
           <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
           <div className="flex flex-col gap-6">
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-              <p>Residental Pest Control</p>
-            </button>
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-              <p>Commercial Pest Control</p>
-            </button>
+            <Link href="/residential">
+              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+                <p>Residental Pest Control</p>
+              </button>
+            </Link>
+            <Link href="/commercial-residental">
+              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+                <p>Commercial Pest Control</p>
+              </button>
+            </Link>
             <Link href="/termite-inspection-residental">
               <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
                 <p>Termite Inspection</p>
@@ -161,11 +165,7 @@ function ResidentalPestControl() {
                 Pest-SA Ants Pest Control
               </button>
             </Link>
-            <Link href="termites-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Termites Pest Control
-              </button>
-            </Link>
+
           </div>
         </div>
       </div>
@@ -173,60 +173,7 @@ function ResidentalPestControl() {
   );
 }
 
-function ResidentalOffer() {
-  return (
-    <div>
-      <div className="w-full bg-secondary-2 h-1" />
-      <div className="flex flex-col items-center py-8">
-        <p className="text-3xl text-secondary-2 font-semibold">
-          RESIDENTAL OFFERS
-        </p>
-        <div className="bg-secondary-2 h-1 w-60 mt-3" />
-      </div>
-      <div className="flex justify-between px-[5%] pt-6 pb-[5%]">
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+
 const CommercialResidential = () => {
   return (
     <div>

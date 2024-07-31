@@ -196,9 +196,11 @@ function ResidentalPestControl() {
           <p className="text-xl">Services Area</p>
           <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
           <div className="flex flex-col gap-6">
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-              <p>Residental Pest Control</p>
-            </button>
+            <Link href="/residential">
+              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+                <p>Residental Pest Control</p>
+              </button>
+            </Link>
             <Link href="/commercial-residental">
               <button className="shadow-md py-3 rounded-lg border border-neutral-9">
                 <p>Commercial Pest Control</p>
@@ -251,11 +253,7 @@ function ResidentalPestControl() {
                 Pest-SA Ants Pest Control
               </button>
             </Link>
-            <Link href="termites-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Termites Pest Control
-              </button>
-            </Link>
+
           </div>
         </div>
       </div>

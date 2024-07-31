@@ -112,68 +112,69 @@ function ResidentalPestControl() {
         <div></div>
       </div>
       <div className="flex flex-col gap-8 w-[20%]">
-      <div className=" rounded-lg p-6 shadow-lg ">
+        <div className=" rounded-lg p-6 shadow-lg ">
           <p className="text-xl">Services Area</p>
-            <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
-            <div className="flex flex-col gap-6">
-  <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-   Residental Pest Control
-  </button>
-  <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-   Commercial Pest Control
-  </button>
-  <Link href="/termite-inspection-residental">
-    <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
-      Termite Inspection
-    </button>
-  </Link>
-</div>
+          <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
+          <div className="flex flex-col gap-6">
+            <Link href="/residential">
+              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+                <p>Residental Pest Control</p>
+              </button>
+            </Link>
+            <Link href="/commercial-residental">
+              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
+                <p>Commercial Pest Control</p>
+              </button>
+            </Link>
+            <Link href="/termite-inspection-residental">
+              <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
+                <p>Termite Inspection</p>
+              </button>
+            </Link>
+          </div>
         </div>
         <div className="shadow-lg rounded-lg p-6 flex flex-col">
           <p className="text-xl">Pest Control Services</p>
-            <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
-            <div className="flex flex-col gap-6">
-         <Link href="/pest-sa-cockroaches-residental">
-         <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-          Pest-SA Cockroaches
-          </button>
-          </Link>
-         <Link href="spider-pest-residental">
-         <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-            Spider Pest Control
-            </button>
-         </Link>
+          <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
+          <div className="flex flex-col gap-6">
+            <Link href="/pest-sa-cockroaches-residental">
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+                Pest-SA Cockroaches
+              </button>
+            </Link>
+            <Link href="spider-pest-residental">
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+                Spider Pest Control
+              </button>
+            </Link>
             <Link href="rodent-pest-residental">
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-            Rodents Pest Control
-            </button></Link>
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+                Rodents Pest Control
+              </button>
+            </Link>
 
             <Link href="birds-pest-residental">
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-            Birds Pest Control
-            </button>
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+                Birds Pest Control
+              </button>
             </Link>
-         <Link href="bees-maps-residental">
-         <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-          Bees and Waps Control
-          </button>
-         </Link>
-          <Link href="timber-residental">
-          <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-           Timber  Pest Control
-           </button>
-          </Link>
-        <Link href="ants-residental">
-        <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-           Pest-SA Ants Pest Control
-           </button>
-        </Link>
-          <Link href="termites-pest-residental">
-          <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-           Termites Pest Control
-           </button>
-          </Link>
-         </div>
+            <Link href="bees-maps-residental">
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+                Bees and Waps Control
+              </button>
+            </Link>
+            <Link href="timber-residental">
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+                Timber Pest Control
+              </button>
+            </Link>
+            <Link href="ants-residental">
+              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
+                Pest-SA Ants Pest Control
+              </button>
+            </Link>
+
+          </div>
         </div>
       </div>
     </div>
