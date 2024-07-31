@@ -58,34 +58,34 @@ function HeroSection() {
   );
 }
 
-function ResidentalPestControl() {
+function ResidentialPestControl() {
   return (
-    <div className="bg-neutral-10 p-[5%] flex">
-      <div className="w-full flex-col flex gap-8">
-        <div className="text-lg lg:w-[60%] sm:w-full md:w-full leading-7 text-justify">
+    <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between lg:gap-8">
+      <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
+        <div className="text-base sm:text-lg leading-7 text-justify">
           <div className="w-full">
-            <p className="text-3xl text-secondary-2 font-semibold ">
-              Bees and Waps Pest Control
+            <p className="text-2xl sm:text-3xl text-secondary-2 font-semibold">
+              Bees and Wasps Pest Control
             </p>
-            <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
-            <div>
-              <img src="/bees-pest.png" />
+            <div className="bg-secondary-2 h-1 w-32 sm:w-40 mt-3 mb-6"></div>
+            <div className="w-full">
+              <img src="/bees-pest.png" alt="Bees and Wasps Pest Control" className="w-full h-auto" />
             </div>
-            <div>
-              <p className="font-semibold py-8">
+            <div className="mt-6">
+              <p className="font-semibold py-4 sm:py-8">
                 Safeguard your home from Bees and Wasps
               </p>
-              <p>
-                 Bees and wasp can be seen unexpectedly anywhere. Out of nowhere
+              <p className="mb-4">
+                Bees and wasp can be seen unexpectedly anywhere. Out of nowhere
                 they can arrive at a place with their brigade and make a hive in
                 and around your home or office building. They usually settle
                 around chimney vents, tree, and garden area. It is very
-                difficult to get rid of them, spraying water won’t help. These
+                difficult to get rid of them, spraying water won't help. These
                 tiny insects are usually in search of moisture and The city
-                of Adelaide is the perfect home for them. Spraying water can be
+                of Adelaide is the perfect home for them. Spraying water can be
                 more inviting as well.
               </p>
-              <p>
+              <p className="mb-4">
                 Moreover, these bees and wasps are super active during the
                 summer due to the hot and moist weather condition. when it bites
                 anyone the sting is very painful and annoying. It can lead to
@@ -95,9 +95,9 @@ function ResidentalPestControl() {
               </p>
             </div>
 
-            <div>
-              <p className="font-semibold py-8">Prevention of Bees and Wasps</p>
-              <p>
+            <div className="mt-6">
+              <p className="font-semibold py-4 sm:py-8">Prevention of Bees and Wasps</p>
+              <p className="mb-4">
                 Getting rid of bees and wasp is very difficult, you can still
                 try your level best to prevent them during summer. You can keep
                 a narrow water tray and add some floating corks nearby bees hub.
@@ -105,96 +105,76 @@ function ResidentalPestControl() {
                 the bees to land safely on the cork and get in contact with
                 water.
               </p>
-              <p>
+              <p className="mb-4">
                 The wasps enjoys the liquid sweet treat, you can place a soft
-                drink can and use the same to trap them.  Never even try to
+                drink can and use the same to trap them. Never even try to
                 approach a bee or wasp nest, they can be very aggressive while
-                protecting their home.  Wasps generally make mud cells near a
+                protecting their home. Wasps generally make mud cells near a
                 shaded place as their home during summers.
               </p>
-              <p>
+              <p className="mb-4">
                 Let them finish the larval housing, once they have left, discard
                 them. All of these prevention methods are temporary, in order to
                 get rid of this issue, it is always advisable to approach
-                reliable pest control, Adelaide.  They make use of different
+                reliable pest control, Adelaide. They make use of different
                 techniques to solve the bees and wasps problem at home and
                 office.
               </p>
             </div>
-            <div>
-              <p className="font-semibold py-8">
+            <div className="mt-6">
+              <p className="font-semibold py-4 sm:py-8">
                 Tips to prevent bees and wasps
               </p>
-              <ul className="list-decimal pl-8">
-                <li>
-                  Discard any fallen fruit or food items from the garden area.
-                </li>
-                <li>
-                  Never leave the uneaten pet food outside the home or near the
-                  balcony.
-                </li>
-                <li>
-                  Discard the bins and make sure to use a tight-fitting lid so
-                  that insects cannot enter inside. Limit the water sources.
-                </li>
-                <li>
-                  Always cover the food when you are out of the home, especially
-                  during picnics and barbeques.
-                </li>
-                <li>
-                  Make sure to use clean containers with straw to drink, discard
-                  cans and bottles with lids.
-                </li>
-                <li>Keep the child and pets away.</li>
-                <li>
-                  Always keep the windows and door shut so that the bees and
-                  wasp don’t enter your home.
-                </li>
+              <ul className="list-decimal pl-6 mb-4">
+                <li className="mb-2">Discard any fallen fruit or food items from the garden area.</li>
+                <li className="mb-2">Never leave the uneaten pet food outside the home or near the balcony.</li>
+                <li className="mb-2">Discard the bins and make sure to use a tight-fitting lid so that insects cannot enter inside. Limit the water sources.</li>
+                <li className="mb-2">Always cover the food when you are out of the home, especially during picnics and barbeques.</li>
+                <li className="mb-2">Make sure to use clean containers with straw to drink, discard cans and bottles with lids.</li>
+                <li className="mb-2">Keep the child and pets away.</li>
+                <li className="mb-2">Always keep the windows and door shut so that the bees and wasp don't enter your home.</li>
               </ul>
             </div>
-            <div>
-              <p className="font-semibold py-8">
+            <div className="mt-6">
+              <p className="font-semibold py-4 sm:py-8">
                 Signs of Bee and Wasp Infestation at Home
               </p>
-              <p>
+              <p className="mb-4">
                 Usually, wasp and bees make nests in wood pulp, the saliva is
                 used to create a wall. These nests are founded in the shaded
                 area. They make corner of walls, roof, tree, unused vehicles are
                 their home.
               </p>
-              <p>
+              <p className="mb-4">
                 Once the nest is built, the size can increase at a very rapid
                 speed, the situation gets worst in summers. It is best to
-                hire Pest-Ex Adelaide during the spring season. They will
+                hire Pest-Ex Adelaide during the spring season. They will
                 eradicate the problem of bees and wasps completely.
               </p>
             </div>
-            <div>
-              <p className="font-semibold py-8">
+            <div className="mt-6">
+              <p className="font-semibold py-4 sm:py-8">
                 Bees and Wasps are attracted to
               </p>
-              <ul className="list-decimal pl-8">
-                <li>
-                  Easily accessible raw and cooked sweet foods like fruit, soft
-                  drinks, wine, water
-                </li>
-                <li>Open pet food.</li>
-                <li> Recently mown lawn area.</li>
+              <ul className="list-disc pl-6 mb-4">
+                <li className="mb-2">Easily accessible raw and cooked sweet foods like fruit, soft drinks, wine, water</li>
+                <li className="mb-2">Open pet food.</li>
+                <li className="mb-2">Recently mown lawn area.</li>
               </ul>
             </div>
-            <div>
-              <p className="font-semibold py-8">
-                Bees and Wasps are attracted to
+            <div className="mt-6">
+              <p className="font-semibold py-4 sm:py-8">
+                Professional Bee and Wasp Control
               </p>
-              <p>
-                The warm and moist weather of Adelaide makes it a  perfect place
-                for bees and wasp to grow, survive and multiply.  Home remedies
+              <p className="mb-4">
+                The warm and moist weather of Adelaide makes it a perfect place
+                for bees and wasp to grow, survive and multiply. Home remedies
                 and prevention tips are good and workable for a short time
-                duration. It is best to hire an expert like Pest-Ex Adelaide to
+                duration. It is best to hire an expert like Pest-Ex Adelaide to
                 undergo permanent Bee and Wasp Control, these treatments are
                 totally safe for pets, family and also for the environment.
               </p>
-              <p>
+              <p className="mb-4">
                 The team is extremely skilled and does effective job at very
                 affordable rates. They make sure the issue is dealt completely
                 so that your home remains safe and pest free. Proactive risk
@@ -203,78 +183,52 @@ function ResidentalPestControl() {
                 infestation and make sure that area is totally treated so that
                 no issue of wasps and bees occurs in future.
               </p>
-              <p>
-                Always hire a trusted pest control company to do the eratication
-                of  bees and wasps, only a reliable company can solve the issue
+              <p className="mb-4">
+                Always hire a trusted pest control company to do the eradication
+                of bees and wasps, only a reliable company can solve the issue
                 safely.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-8 w-[20%]">
-        <div className=" rounded-lg p-6 shadow-lg ">
+      <div className="w-full lg:w-[20%] flex flex-col gap-8">
+        <div className="rounded-lg p-4 sm:p-6 shadow-lg">
           <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <Link href="/residential">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Residental Pest Control</p>
-              </button>
-            </Link>
-            <Link href="/commercial-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Commercial Pest Control</p>
-              </button>
-            </Link>
-            <Link href="/termite-inspection-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
-                <p>Termite Inspection</p>
-              </button>
-            </Link>
+          <div className="bg-black h-1 w-28 sm:w-35 mt-3 mb-5 sm:mb-7"></div>
+          <div className="flex flex-col gap-4 sm:gap-6">
+            {[
+              { href: "/residential", text: "Residential Pest Control" },
+              { href: "/commercial-residential", text: "Commercial Pest Control" },
+              { href: "/termite-inspection-residential", text: "Termite Inspection" },
+            ].map((item, index) => (
+              <Link href={item.href} key={index}>
+                <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+                  {item.text}
+                </button>
+              </Link>
+            ))}
           </div>
         </div>
-        <div className="shadow-lg rounded-lg p-6 flex flex-col">
+        <div className="shadow-lg rounded-lg p-4 sm:p-6 flex flex-col">
           <p className="text-xl">Pest Control Services</p>
-          <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <Link href="/pest-sa-cockroaches-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Cockroaches
-              </button>
-            </Link>
-            <Link href="spider-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Spider Pest Control
-              </button>
-            </Link>
-            <Link href="rodent-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Rodents Pest Control
-              </button>
-            </Link>
-
-            <Link href="birds-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Birds Pest Control
-              </button>
-            </Link>
-            <Link href="bees-maps-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Bees and Waps Control
-              </button>
-            </Link>
-            <Link href="timber-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Timber Pest Control
-              </button>
-            </Link>
-            <Link href="ants-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Ants Pest Control
-              </button>
-            </Link>
-
+          <div className="bg-black h-1 w-40 sm:w-50 mt-3 mb-5 sm:mb-7"></div>
+          <div className="flex flex-col gap-4 sm:gap-6">
+            {[
+              { href: "/pest-sa-cockroaches-residential", text: "Pest-SA Cockroaches" },
+              { href: "/spider-pest-residential", text: "Spider Pest Control" },
+              { href: "/rodent-pest-residential", text: "Rodents Pest Control" },
+              { href: "/birds-pest-residential", text: "Birds Pest Control" },
+              { href: "/bees-maps-residential", text: "Bees and Wasps Control" },
+              { href: "/timber-residential", text: "Timber Pest Control" },
+              { href: "/ants-residential", text: "Pest-SA Ants Pest Control" },
+            ].map((item, index) => (
+              <Link href={item.href} key={index}>
+                <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+                  {item.text}
+                </button>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -292,8 +246,7 @@ const BeesMapResidential = () => {
       </div>
       <Navbar />
       <HeroSection />
-      <ResidentalPestControl />
-      {/* <ResidentalOffer /> */}
+      <ResidentialPestControl />
       <ContactUs />
       <Footer />
     </div>

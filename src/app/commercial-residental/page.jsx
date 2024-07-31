@@ -56,123 +56,94 @@ function HeroSection() {
   );
 }
 
-function ResidentalPestControl() {
+
+function ResidentialPestControl() {
   return (
-    <div className="bg-neutral-10 p-[5%] flex">
-      <div className="w-full flex-col flex gap-8">
-        <div className="text-lg lg:w-[60%] sm:w-full md:w-full leading-7 text-justify">
+    <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between">
+      <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
+        <div className="text-base sm:text-lg leading-7 text-justify">
           <div className="w-full">
-            <p className="text-3xl text-secondary-2 font-semibold ">
+            <p className="text-2xl sm:text-3xl text-secondary-2 font-semibold">
               Commercial Pest Control
             </p>
-            <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
+            <div className="bg-secondary-2 h-1 w-32 sm:w-40 mt-3 mb-6"></div>
           </div>
-          <p>
+          <p className="mb-4">
             How we get the job done is just as important to our team, as the
             eradication and control of pests in your business. With a dedicated
             client service manager for our commercial pest control customers, we
             know what you need, when you need it and the best way to approach
-            the problem. Pest SA Pest Control are your partners in keeping your
-            premises and workplaces free from pests. We’ll work with you to
+            the problem. Pest SA Pest Control are your partners in keeping your
+            premises and workplaces free from pests. We'll work with you to
             determine the best plan to meet the needs of your business, then
             estimate the job using our transparent quoting policy – with no
             hidden costs. Our skilled technicians will act quickly to treat the
             problem, eradicating all pests and safeguarding against their
             return.
           </p>
-
-          <p>
+          <p className="mb-4">
             We are industry leaders in competitive pricing, Deliver dependable
             customer satisfaction and fully guarantee our service. Rest assure
-            Pest-SA Pest control  is certified and accredited with South
+            Pest-SA Pest control is certified and accredited with South
             Australian Health the Controlled substances Pesticide Regulation. We
             are Fully Licensed and Insured Pest Control company.
           </p>
-          <ul className="list-disc p-8">
-            <li> Warehouse and Conatainers Pest Control. </li>
-            <li>Child Care and School Pest Control .</li>
+          <ul className="list-disc pl-6 mb-6">
+            <li>Warehouse and Containers Pest Control.</li>
+            <li>Child Care and School Pest Control.</li>
             <li>Hospital and Office Pest Control</li>
-            <li>Property Mangement (Strata Pest Control) .</li>
-            <li>Supermarket and Grocery store Pest Control .</li>
-            <li>Restaurat and Bars Pest Control .</li>
+            <li>Property Management (Strata Pest Control).</li>
+            <li>Supermarket and Grocery store Pest Control.</li>
+            <li>Restaurant and Bars Pest Control.</li>
             <li>Pre-Construction Pest Control</li>
           </ul>
         </div>
-        <div>
-          <img src="/commercial-pest.png" />
+        <div className="w-full">
+          <img src="/commercial-pest.png" alt="Commercial Pest Control" className="w-full h-auto" />
         </div>
-        <div></div>
       </div>
-      <div className="flex flex-col gap-8 w-[20%]">
-        <div className=" rounded-lg p-6 w-full shadow-lg ">
+      <div className="w-full lg:w-[20%] flex flex-col gap-8">
+        <div className="rounded-lg p-4 sm:p-6 w-full shadow-lg">
           <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <Link href="/residential">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-              Residental Pest Control
-              </button>
+          <div className="bg-black h-1 w-28 sm:w-35 mt-3 mb-5 sm:mb-7"></div>
+          <div className="flex flex-col gap-4 sm:gap-6">
+            <Link href="/residential" className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+              Residential Pest Control
             </Link>
-
-            <Link href="/commercial-residental">
-              <button className="shadow-md rounded-lg border border-neutral-9 w-full">
-                Commercial Pest Controls
-              </button>
+            <Link href="/commercial-residential" className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+              Commercial Pest Control
             </Link>
-            <Link href="/termite-inspection-residental">
-              <button className="shadow-md rounded-lg border border-neutral-9 w-full">
-                Termite Inspection
-              </button>
+            <Link href="/termite-inspection-residential" className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+              Termite Inspection
             </Link>
           </div>
         </div>
-        <div className="shadow-lg rounded-lg p-6 flex flex-col">
+        <div className="shadow-lg rounded-lg p-4 sm:p-6 flex flex-col">
           <p className="text-xl">Pest Control Services</p>
-          <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <Link href="/pest-sa-cockroaches-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Cockroaches
-              </button>
-            </Link>
-            <Link href="spider-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Spider Pest Control
-              </button>
-            </Link>
-            <Link href="rodent-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Rodents Pest Control
-              </button>
-            </Link>
-
-            <Link href="birds-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Birds Pest Control
-              </button>
-            </Link>
-            <Link href="bees-maps-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Bees and Waps Control
-              </button>
-            </Link>
-            <Link href="timber-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Timber Pest Control
-              </button>
-            </Link>
-            <Link href="ants-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Ants Pest Control
-              </button>
-            </Link>
-
+          <div className="bg-black h-1 w-40 sm:w-50 mt-3 mb-5 sm:mb-7"></div>
+          <div className="flex flex-col gap-4 sm:gap-6">
+            {[
+              { href: "/pest-sa-cockroaches-residential", text: "Pest-SA Cockroaches" },
+              { href: "/spider-pest-residential", text: "Spider Pest Control" },
+              { href: "/rodent-pest-residential", text: "Rodents Pest Control" },
+              { href: "/birds-pest-residential", text: "Birds Pest Control" },
+              { href: "/bees-maps-residential", text: "Bees and Wasps Control" },
+              { href: "/timber-residential", text: "Timber Pest Control" },
+              { href: "/ants-residential", text: "Pest-SA Ants Pest Control" },
+            ].map((item, index) => (
+              <Link href={item.href} key={index} className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+                {item.text}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+
+
 
 
 const CommercialResidential = () => {
@@ -184,7 +155,7 @@ const CommercialResidential = () => {
       </div>
       <Navbar />
       <HeroSection />
-      <ResidentalPestControl />
+      <ResidentialPestControl />
       {/* <ResidentalOffer /> */}
       <ContactUs />
       <Footer />

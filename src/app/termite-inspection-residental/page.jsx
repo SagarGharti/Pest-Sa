@@ -62,11 +62,27 @@ function HeroSection() {
   );
 }
 
-function ResidentalPestControl() {
+function ResidentialPestControl() {
+  const serviceAreaLinks = [
+    { href: "/residential", text: "Residential Pest Control" },
+    { href: "/commercial-residential", text: "Commercial Pest Control" },
+    { href: "/termite-inspection-residential", text: "Termite Inspection" },
+  ];
+
+  const pestControlServicesLinks = [
+    { href: "/pest-sa-cockroaches-residential", text: "Pest-SA Cockroaches" },
+    { href: "/spider-pest-residential", text: "Spider Pest Control" },
+    { href: "/rodent-pest-residential", text: "Rodents Pest Control" },
+    { href: "/birds-pest-residential", text: "Birds Pest Control" },
+    { href: "/bees-maps-residential", text: "Bees and Wasps Control" },
+    { href: "/timber-residential", text: "Timber Pest Control" },
+    { href: "/ants-residential", text: "Pest-SA Ants Pest Control" },
+  ];
+
   return (
     <div className="bg-neutral-10 p-[5%] flex">
       <div className="w-full flex-col flex gap-8">
-        <div className="text-lg lg:w-[60%] sm:w-full md:w-full leading-7 text-justify">
+        <div className="text-lg lg:w-[80%] sm:w-full md:w-full leading-7 text-justify">
           <div className="w-full">
             <p className="text-3xl text-secondary-2 font-semibold ">
               Termite Inspection
@@ -75,21 +91,20 @@ function ResidentalPestControl() {
           </div>
           <p>
             Pest-SA Pest Control Adelaide is a South Australia based Business.
-            We are Local and we are Termite Specialist that perform a full
+            We are Local and we are Termite Specialist that perform a full
             termite inspections with most recent available technology. Our
             inspections accordance with Australian standards 3660.2. Our Termite
             Specialist inspects and provide 10 pages report for you.
           </p>
           <ul className="list-disc p-8">
             <li>Any accessible roof void.</li>
-            <li>Any  accessible sub floor.</li>
+            <li>Any accessible sub floor.</li>
             <li>All Internal areas of the property.</li>
             <li>Outside the perimeter of the property.</li>
             <li>The Yard, fences, retaining walls and out buildings.</li>
           </ul>
 
           <p>
-            {" "}
             If you think that is termites at your property do not disturb them
             and do not spray with any chemicals as you may make them go attack
             another part of the Building.
@@ -103,74 +118,36 @@ function ResidentalPestControl() {
             help the South Australian communities.
           </p>
         </div>
-        <div>
+        <div className="lg:w-[80%] sm:w-full md:w-full">
           <img src="/termite-pest.png" />
         </div>
         <div></div>
       </div>
       <div className="flex flex-col gap-8 w-[20%]">
-        <div className=" rounded-lg p-6 shadow-lg ">
+        <div className="rounded-lg p-6 shadow-lg">
           <p className="text-xl">Services Area</p>
           <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
           <div className="flex flex-col gap-6">
-            <Link href="/residential">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Residental Pest Control</p>
-              </button>
-            </Link>
-            <Link href="/commercial-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Commercial Pest Control</p>
-              </button>
-            </Link>
-            <Link href="/termite-inspection-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
-                <p>Termite Inspection</p>
-              </button>
-            </Link>
+            {serviceAreaLinks.map((item, index) => (
+              <Link href={item.href} key={index}>
+                <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
+                  {item.text}
+                </button>
+              </Link>
+            ))}
           </div>
         </div>
         <div className="shadow-lg rounded-lg p-6 flex flex-col">
           <p className="text-xl">Pest Control Services</p>
           <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
           <div className="flex flex-col gap-6">
-            <Link href="/pest-sa-cockroaches-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Cockroaches
-              </button>
-            </Link>
-            <Link href="spider-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Spider Pest Control
-              </button>
-            </Link>
-            <Link href="rodent-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Rodents Pest Control
-              </button>
-            </Link>
-
-            <Link href="birds-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Birds Pest Control
-              </button>
-            </Link>
-            <Link href="bees-maps-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Bees and Waps Control
-              </button>
-            </Link>
-            <Link href="timber-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Timber Pest Control
-              </button>
-            </Link>
-            <Link href="ants-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Ants Pest Control
-              </button>
-            </Link>
-
+            {pestControlServicesLinks.map((item, index) => (
+              <Link href={item.href} key={index}>
+                <button className="shadow-md p-3 rounded-lg border border-neutral-9 w-full">
+                  {item.text}
+                </button>
+              </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -178,60 +155,8 @@ function ResidentalPestControl() {
   );
 }
 
-function ResidentalOffer() {
-  return (
-    <div>
-      <div className="w-full bg-secondary-2 h-1" />
-      <div className="flex flex-col items-center py-8">
-        <p className="text-3xl text-secondary-2 font-semibold">
-          RESIDENTAL OFFERS
-        </p>
-        <div className="bg-secondary-2 h-1 w-60 mt-3" />
-      </div>
-      <div className="flex justify-between px-[5%] pt-6 pb-[5%]">
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+
+
 const TermiteInspection = () => {
   return (
     <div>
@@ -241,7 +166,7 @@ const TermiteInspection = () => {
       </div>
       <Navbar />
       <HeroSection />
-      <ResidentalPestControl />
+      <ResidentialPestControl />
       {/* <ResidentalOffer /> */}
       <ContactUs />
       <Footer />

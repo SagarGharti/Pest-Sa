@@ -56,222 +56,113 @@ function HeroSection() {
   );
 }
 
-function ResidentalPestControl() {
+const serviceAreaLinks = [
+  { href: "/residential", text: "Residential Pest Control" },
+  { href: "/commercial-residential", text: "Commercial Pest Control" },
+  { href: "/termite-inspection-residential", text: "Termite Inspection" },
+];
+
+const pestControlServicesLinks = [
+  { href: "/pest-sa-cockroaches-residential", text: "Pest-SA Cockroaches" },
+  { href: "/spider-pest-residential", text: "Spider Pest Control" },
+  { href: "/rodent-pest-residential", text: "Rodents Pest Control" },
+  { href: "/birds-pest-residential", text: "Birds Pest Control" },
+  { href: "/bees-wasps-residential", text: "Bees and Wasps Control" }, // Updated this line
+  { href: "/timber-residential", text: "Timber Pest Control" },
+  { href: "/ants-residential", text: "Pest-SA Ants Pest Control" },
+];
+function ResidentialPestControl() {
   return (
-    <div className="bg-neutral-10 p-[5%] flex">
-      <div className="w-full flex-col flex gap-8">
-        <div className="text-lg lg:w-[60%] sm:w-full md:w-full leading-7 text-justify">
+    <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between lg:gap-8">
+      <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
+        <div className="text-base sm:text-lg leading-7 text-justify">
           <div className="w-full">
-            <p className="text-3xl text-secondary-2 font-semibold ">
+            <p className="text-2xl sm:text-3xl text-secondary-2 font-semibold">
               Timber Pest Control
             </p>
-            <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
-            <div>
-              <img src="/timber-pest.png" />
+            <div className="bg-secondary-2 h-1 w-32 sm:w-40 mt-3 mb-6"></div>
+            <div className="w-full">
+              <img src="/timber-pest.png" alt="Timber Pest Control" className="w-full h-auto" />
             </div>
-            <div>
-              <p className="font-semibold py-8">
-                pre-purchase timber pest inspection
-              </p>
-              <p>
-                The main purpose of pre-purchase timber pest inspection is to
-                check the condition of the home before you plan to invest in it.
-                If there are any issues you can also do the needful to fix it or
-                look for another suitable property.
-              </p>
-              <p>
-                The most common effects in buildings during a regular inspection
-                is checking for  increase in damp ,drain leakage issues, cracked
-                walls, safety problems, leakage in the roof etc. You can get an
-                estimation before making a purchase decision in Adelaide. This
-                will also help you to negotiate the final price of the building.
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold py-8">
-                Need for Pre Purchase Pest Inspection
-              </p>
-              <p>
-                A pre-purchase pest inspection is curial before buying a
-                property. It varies from the regular termite inspection which is
-                carried by the property owner. The Pre Purchase Pest Inspection
-                should include inspection of wood decay fungi, presence of
-                mould, borers etc.  It also includes the overall cost of
-                treating the pest issue, preventing the same condition to happen
-                in future. All this should be considered in order to negotiate
-                the final price of the property and to make the right purchase
-                decision.
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold py-8">
-                How to finalize the right pest inspectors for your building?
-              </p>
-              <p>
-                Here are some tips which will help you to reach the right person
-                to inspect the building for pests.
-              </p>
-              <ul className="list-decimal	pl-8">
-                <li>
-                  Avoid going with the real estate recommendations: Usually,
-                  real estate agents have internal dealings and preferences for
-                  specific pest control companies. They usually will pass the
-                  detail to you and won’t genuinely recommend the right company
-                  in Adelaide. This happens as the real estate companies are
-                  acting for the sellers and they prefer to avoid too detailed
-                  inspection as much as possible. The pest inspection may have a
-                  negative effect on the overall sales price which is not great
-                  for the sellers. It is always advisable for the buyers to
-                  approach a good pest control company like Pest-SA
-                </li>
-                <li>
-                  Don’t select based on the price: You need to understand the
-                  fact “cheap is not always best” especially when you are
-                  deciding a pest inspector for your building. Approach the pest
-                  control inspectors with experience and which are recommended
-                  by your friends, family or colleagues. You can also look for
-                  online portals for testimonials and reviews.
-                </li>
-                <li>
-                  A professional inspector will take the necessary time to carry
-                  out the inspection and they usually have a team of skilled
-                  professional to ensure total safety of your
-                  building. Pest-SA  has the team of right inspectors who can
-                  help you to make a right investment decision.
-                </li>
-                <li>
-                  Check Authenticity: Always ensure the inspectors are well
-                  qualified to begin the inspection. It is a must for them to
-                  carry a valid license to work in Adelaide. It is mandatory for
-                  them to have a valid license to initiate timber pest/termite
-                  work along with their pest license. Moreover, also check the
-                  validity of insurance carried by the inspectors, they should
-                  have a professional and public liability insurance to carry
-                  with the pest inspection job. A legit company will happily
-                  share these necessary documents on request.
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold py-8">
-                Are There Any Drawbacks to Pre Purchase Timber Pest Inspection?
-              </p>
-              <p>
-                A pre-purchase timber pest inspection will not cause any damage
-                to the property or any furniture. The inspectors will note all
-                the area which has been inspected. If they haven’t got access to
-                any particular area, it is also mentioned in the final
-                inspection report.
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold py-8">
-                How Pre Purchase Timber Pest Inspection is Done?
-              </p>
-              <p>
-                Usually, the seller does not provide access to a few areas in
-                order to hide the furniture, a good company like Pest-SA Pest
-                Control are usually aware of such tricks and share the final
-                report based on the inspections.  The inspector should not
-                comment on any particular area for which they have not got the
-                access to.
-              </p>
-              <p>
-                The pre-purchase timber inspections should be carried as per the
-                Australian Standards AS 4349.1.  to inspect the borers, decaying
-                of wood, active pest activities, termites, damage signs, any
-                fault at the building, overall environment condition or any
-                occurrence of pest issues in future.
-              </p>
-              <p>
-                In order to begin with the inspection, the inspector should
-                deeply go through every room and also inspect the roof void and
-                sub-floor timber. In addition to it, they should inspect the
-                outside building, fencing area, tress area up to 30 meters from
-                the building. The inspectors usually look for leakages, drainage
-                and issue in ventilation, a fault in the construction and all
-                other major issues which damage the house due to termites.
-              </p>
-              <p>
-                Pest-SA Pest Control is a professional company which makes use
-                of additional equipment to ensure 100 % pest inspections. The
-                equipment includes moisture meters, imaging cameras, motion
-                detectors which ensures to all investigation of each nook and
-                corner of the building. During the visit of inspections, they do
-                not move any belongings or open up the walls to confirm the
-                presence of termites.
-              </p>
-              <p>
-                Before investing in any property located in Adelaide make sure
-                to hire a qualified pest inspection company to do the job.
-              </p>
-            </div>
+          </div>
+          <div className="mt-6">
+            <p className="font-semibold py-4 sm:py-8">Pre-purchase Timber Pest Inspection</p>
+            <p className="mb-4">
+              The main purpose of pre-purchase timber pest inspection is to check the condition of the home before you plan to invest in it. If there are any issues, you can also do the needful to fix it or look for another suitable property.
+            </p>
+            <p className="mb-4">
+              The most common effects in buildings during a regular inspection include checking for increase in damp, drain leakage issues, cracked walls, safety problems, leakage in the roof, etc. You can get an estimation before making a purchase decision in Adelaide. This will also help you to negotiate the final price of the building.
+            </p>
+          </div>
+          <div className="mt-6">
+            <p className="font-semibold py-4 sm:py-8">Need for Pre-Purchase Pest Inspection</p>
+            <p className="mb-4">
+              A pre-purchase pest inspection is crucial before buying a property. It varies from the regular termite inspection which is carried out by the property owner. The Pre-Purchase Pest Inspection should include inspection of wood decay fungi, presence of mould, borers, etc. It also includes the overall cost of treating the pest issue and preventing the same condition from happening in the future. All this should be considered to negotiate the final price of the property and to make the right purchase decision.
+            </p>
+          </div>
+          <div className="mt-6">
+            <p className="font-semibold py-4 sm:py-8">How to Finalize the Right Pest Inspectors for Your Building?</p>
+            <p className="mb-4">
+              Here are some tips to help you choose the right person to inspect the building for pests.
+            </p>
+            <ul className="list-decimal pl-6 mb-4">
+              <li className="mb-2">Avoid going with real estate recommendations: Usually, real estate agents have internal dealings and preferences for specific pest control companies. They usually pass the details to you and won’t genuinely recommend the right company in Adelaide. This happens as the real estate companies are acting for the sellers and they prefer to avoid too detailed inspections as much as possible. The pest inspection may have a negative effect on the overall sales price, which is not great for the sellers. It is always advisable for buyers to approach a reputable pest control company like Pest-SA.</li>
+              <li className="mb-2">Don’t select based on price: You need to understand the fact “cheap is not always best,” especially when you are deciding on a pest inspector for your building. Approach pest control inspectors with experience and those recommended by your friends, family, or colleagues. You can also look for online portals for testimonials and reviews.</li>
+              <li className="mb-2">A professional inspector will take the necessary time to carry out the inspection and usually has a team of skilled professionals to ensure the total safety of your building. Pest-SA has the team of right inspectors who can help you to make the right investment decision.</li>
+              <li className="mb-2">Check Authenticity: Always ensure the inspectors are well qualified to begin the inspection. It is a must for them to carry a valid license to work in Adelaide. It is mandatory for them to have a valid license to initiate timber pest/termite work along with their pest license. Moreover, also check the validity of insurance carried by the inspectors. They should have professional and public liability insurance to carry out the pest inspection job. A legitimate company will happily share these necessary documents upon request.</li>
+            </ul>
+          </div>
+          <div className="mt-6">
+            <p className="font-semibold py-4 sm:py-8">Are There Any Drawbacks to Pre-Purchase Timber Pest Inspection?</p>
+            <p className="mb-4">
+              A pre-purchase timber pest inspection will not cause any damage to the property or any furniture. The inspectors will note all the areas which have been inspected. If they haven’t got access to any particular area, it will also be mentioned in the final inspection report.
+            </p>
+          </div>
+          <div className="mt-6">
+            <p className="font-semibold py-4 sm:py-8">How Pre-Purchase Timber Pest Inspection is Done?</p>
+            <p className="mb-4">
+              Usually, the seller does not provide access to a few areas to hide the furniture. A good company like Pest-SA Pest Control is usually aware of such tricks and shares the final report based on the inspections. The inspector should not comment on any particular area for which they have not gained access.
+            </p>
+            <p className="mb-4">
+              The pre-purchase timber inspections should be carried out as per the Australian Standards AS 4349.1 to inspect the borers, decaying of wood, active pest activities, termites, damage signs, any faults in the building, overall environmental conditions, or any occurrence of pest issues in the future.
+            </p>
+            <p className="mb-4">
+              To begin with the inspection, the inspector should thoroughly check every room and also inspect the roof void and sub-floor timber. Additionally, they should inspect the outside building, fencing area, and trees up to 30 meters from the building. The inspectors usually look for leakages, drainage issues, ventilation problems, construction faults, and other major issues that could damage the house due to termites.
+            </p>
+            <p className="mb-4">
+              Pest-SA Pest Control is a professional company that uses additional equipment to ensure 100% pest inspections. The equipment includes moisture meters, imaging cameras, and motion detectors to thoroughly investigate each nook and corner of the building. During the inspection, they do not move any belongings or open up walls to confirm the presence of termites.
+            </p>
+            <p className="mb-4">
+              Before investing in any property located in Adelaide, make sure to hire a qualified pest inspection company to do the job.
+            </p>
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-8 w-[20%]">
-        <div className=" rounded-lg p-6 shadow-lg ">
+      <div className="w-full lg:w-[20%] flex flex-col gap-8">
+        <div className="rounded-lg p-4 sm:p-6 shadow-lg">
           <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <Link href="/residential">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Residental Pest Control</p>
-              </button>
-            </Link>
-            <Link href="/commercial-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-                <p>Commercial Pest Control</p>
-              </button>
-            </Link>
-            <Link href="/termite-inspection-residental">
-              <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
-                <p>Termite Inspection</p>
-              </button>
-            </Link>
+          <div className="bg-black h-1 w-28 sm:w-35 mt-3 mb-5 sm:mb-7"></div>
+          <div className="flex flex-col gap-4 sm:gap-6">
+            {serviceAreaLinks.map((item, index) => (
+              <Link href={item.href} key={index}>
+                <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+                  {item.text}
+                </button>
+              </Link>
+            ))}
           </div>
         </div>
-        <div className="shadow-lg rounded-lg p-6 flex flex-col">
+        <div className="shadow-lg rounded-lg p-4 sm:p-6 flex flex-col">
           <p className="text-xl">Pest Control Services</p>
-          <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <Link href="/pest-sa-cockroaches-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Cockroaches
-              </button>
-            </Link>
-            <Link href="spider-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Spider Pest Control
-              </button>
-            </Link>
-            <Link href="rodent-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Rodents Pest Control
-              </button>
-            </Link>
-
-            <Link href="birds-pest-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Birds Pest Control
-              </button>
-            </Link>
-            <Link href="bees-maps-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Bees and Waps Control
-              </button>
-            </Link>
-            <Link href="timber-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Timber Pest Control
-              </button>
-            </Link>
-            <Link href="ants-residental">
-              <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-                Pest-SA Ants Pest Control
-              </button>
-            </Link>
-
+          <div className="bg-black h-1 w-40 sm:w-50 mt-3 mb-5 sm:mb-7"></div>
+          <div className="flex flex-col gap-4 sm:gap-6">
+            {pestControlServicesLinks.map((item) => (
+           <Link href={item.href}>
+           <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
+             {item.text}
+           </button>
+         </Link>
+            ))}
           </div>
         </div>
       </div>
@@ -288,8 +179,7 @@ const TimberResidential = () => {
       </div>
       <Navbar />
       <HeroSection />
-      <ResidentalPestControl />
-      {/* <ResidentalOffer /> */}
+      <ResidentialPestControl />
       <ContactUs />
       <Footer />
     </div>
