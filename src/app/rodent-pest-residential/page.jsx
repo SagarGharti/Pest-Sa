@@ -6,7 +6,7 @@ import MessageForm from "../Components/MessageForm/MessageForm";
 import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
-import Link from "next/link";
+import ResidenialSidebar from "../Components/ResidentialSidebar/index.jsx";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -202,70 +202,7 @@ function ResidentalPestControl() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[20%] flex flex-col gap-8">
-        <div className="rounded-lg p-4 sm:p-6 shadow-lg">
-          <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-28 sm:w-35 mt-3 mb-5 sm:mb-7"></div>
-          <div className="flex flex-col gap-4 sm:gap-6">
-            <Link href="/residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Residential Pest Control
-              </button>
-            </Link>
-            <Link href="/commercial-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Commercial Pest Control
-              </button>
-            </Link>
-            <Link href="/termite-inspection-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Termite Inspection
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="shadow-lg rounded-lg p-4 sm:p-6 flex flex-col">
-          <p className="text-xl">Pest Control Services</p>
-          <div className="bg-black h-1 w-40 sm:w-50 mt-3 mb-5 sm:mb-7"></div>
-          <div className="flex flex-col gap-4 sm:gap-6">
-            <Link href="/pest-sa-cockroaches-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Pest-SA Cockroaches
-              </button>
-            </Link>
-            <Link href="/spider-pest-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Spider Pest Control
-              </button>
-            </Link>
-            <Link href="/rodent-pest-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Rodents Pest Control
-              </button>
-            </Link>
-            <Link href="/birds-pest-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Birds Pest Control
-              </button>
-            </Link>
-            <Link href="/bees-wasps-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Bees and Wasps Control
-              </button>
-            </Link>
-            <Link href="/timber-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Timber Pest Control
-              </button>
-            </Link>
-            <Link href="/ants-residential">
-              <button className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                Pest-SA Ants Pest Control
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
+    <ResidenialSidebar/>
     </div>
   );
 }

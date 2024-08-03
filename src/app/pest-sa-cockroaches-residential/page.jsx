@@ -6,7 +6,7 @@ import MessageForm from "../Components/MessageForm/MessageForm";
 import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
-import Link from "next/link";
+import ResidenialSidebar from "../Components/ResidentialSidebar";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -64,21 +64,7 @@ function HeroSection() {
 
 
 function ResidentialPestControl() {
-  const serviceAreaLinks = [
-    { href: "/residential", text: "Residential Pest Control" },
-    { href: "/commercial-residential", text: "Commercial Pest Control" },
-    { href: "/termite-inspection-residential", text: "Termite Inspection" },
-  ];
-
-  const pestControlServicesLinks = [
-    { href: "/pest-sa-cockroaches-residential", text: "Pest-SA Cockroaches" },
-    { href: "/spider-pest-residential", text: "Spider Pest Control" },
-    { href: "/rodent-pest-residential", text: "Rodents Pest Control" },
-    { href: "/birds-pest-residential", text: "Birds Pest Control" },
-    { href: "/bees-maps-residential", text: "Bees and Wasps Control" },
-    { href: "/timber-residential", text: "Timber Pest Control" },
-    { href: "/ants-residential", text: "Pest-SA Ants Pest Control" },
-  ];
+ 
 
   return (
     <div className="bg-neutral-10 p-[5%] flex">
@@ -187,34 +173,7 @@ function ResidentialPestControl() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-8 w-[20%]">
-        <div className="rounded-lg p-6 shadow-lg">
-          <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            {serviceAreaLinks.map((item, index) => (
-              <Link href={item.href} key={index}>
-                <button className="shadow-md py-3 rounded-lg border border-neutral-9 w-full">
-                  {item.text}
-                </button>
-              </Link>
-            ))}
-          </div>
-        </div>
-        <div className="shadow-lg rounded-lg p-6 flex flex-col">
-          <p className="text-xl">Pest Control Services</p>
-          <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            {pestControlServicesLinks.map((item, index) => (
-              <Link href={item.href} key={index}>
-                <button className="shadow-md p-3 rounded-lg border border-neutral-9 w-full">
-                  {item.text}
-                </button>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
+     <ResidenialSidebar/>
     </div>
   );
 }
