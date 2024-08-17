@@ -7,6 +7,7 @@ import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
 import Link from "next/link";
+import ResidenialSidebar from "../Components/ResidentialSidebar";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -201,42 +202,7 @@ function ResidentalPestControl() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-[20%] flex flex-col gap-8">
-        <div className="rounded-lg p-4 sm:p-6 w-full shadow-lg">
-          <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-28 sm:w-35 mt-3 mb-5 sm:mb-7"></div>
-          <div className="flex flex-col gap-4 sm:gap-6">
-            <Link href="/residential" className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-              Residential Pest Control
-            </Link>
-            <Link href="/commercial-residential" className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-              Commercial Pest Control
-            </Link>
-            <Link href="/termite-inspection-residential" className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-              Termite Inspection
-            </Link>
-          </div>
-        </div>
-        <div className="shadow-lg rounded-lg p-4 sm:p-6 flex flex-col">
-          <p className="text-xl">Pest Control Services</p>
-          <div className="bg-black h-1 w-40 sm:w-50 mt-3 mb-5 sm:mb-7"></div>
-          <div className="flex flex-col gap-4 sm:gap-6">
-            {[
-              { href: "/pest-sa-cockroaches-residential", text: "Pest-SA Cockroaches" },
-              { href: "/spider-pest-residential", text: "Spider Pest Control" },
-              { href: "/rodent-pest-residential", text: "Rodents Pest Control" },
-              { href: "/birds-pest-residential", text: "Birds Pest Control" },
-              { href: "/bees-maps-residential", text: "Bees and Wasps Control" },
-              { href: "/timber-residential", text: "Timber Pest Control" },
-              { href: "/ants-residential", text: "Pest-SA Ants Pest Control" },
-            ].map((item, index) => (
-              <Link href={item.href} key={index} className="shadow-md p-2 sm:p-3 rounded-lg border border-neutral-9 w-full text-sm sm:text-base">
-                {item.text}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
+      <ResidenialSidebar/>
     </div>
   );
 }

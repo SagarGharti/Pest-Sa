@@ -67,9 +67,9 @@ function ResidentialPestControl() {
  
 
   return (
-    <div className="bg-neutral-10 p-[5%] flex">
-      <div className="w-full flex-col flex gap-8">
-        <div className="text-lg lg:w-[80%] sm:w-full md:w-full leading-7 text-justify">
+    <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between">
+      <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
+        <div className="text-lg  sm:w-full md:w-full leading-7 text-justify">
           <div className="w-full">
             <p className="text-3xl text-secondary-2 font-semibold">
               Pest-SA Cockroaches{" "}
