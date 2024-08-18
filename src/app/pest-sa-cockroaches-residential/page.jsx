@@ -6,7 +6,7 @@ import MessageForm from "../Components/MessageForm/MessageForm";
 import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
-import Link from "next/link";
+import ResidenialSidebar from "../Components/ResidentialSidebar";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -27,12 +27,9 @@ function HeroSection() {
       </div>
       <div className="text-center">
         <p className="text-3xl font-bold ">
-          ‘We’re there for you until they are Gone’! We stand by our{" "}
+        Pest-SA Cockroaches
         </p>
-        <p className="text-3xl font-bold ">
-          {" "}
-          warranties, so If the pests come back - so do we.
-        </p>
+       
       </div>
       <div className="text-center">
         <p className="text-lg ">
@@ -65,14 +62,17 @@ function HeroSection() {
   );
 }
 
-function ResidentalPestControl() {
+
+function ResidentialPestControl() {
+ 
+
   return (
-    <div className="bg-neutral-10 p-[5%] flex">
-      <div className="w-full flex-col flex gap-8">
-        <div className="text-lg lg:w-[60%] sm:w-full md:w-full leading-7 text-justify">
+    <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between">
+      <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
+        <div className="text-lg  sm:w-full md:w-full leading-7 text-justify">
           <div className="w-full">
-            <p className="text-3xl text-secondary-2 font-semibold ">
-              Pest-SA cockroacahes{" "}
+            <p className="text-3xl text-secondary-2 font-semibold">
+              Pest-SA Cockroaches{" "}
             </p>
             <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
           </div>
@@ -125,24 +125,20 @@ function ResidentalPestControl() {
             to medium brown in color and fairly small in size (10-15 mm). Adult
             American cockroaches are reddish brown in color and large in size
             (35-40 mm). Adult Oriental cockroaches are fairly large in size
-            (26-30 mm) and are shiny, dark
+            (26-30 mm) and are shiny, dark brown or black in color. Cockroaches
+            require food, water, and places to hide and are, therefore, found in
+            situations where these requirements can be met. They are nocturnal,
+            remaining hidden during the day and becoming active at night to
+            obtain food and water, and to reproduce. The German cockroach
+            commonly occurs in kitchens; the American cockroach appears more
+            often in food establishments; and the Oriental cockroach is usually
+            associated with dampness around sinks or in basements. Cockroaches
+            are not normally encountered by man unless their populations become
+            very large. Cockroaches will eat almost anything: left-over human
+            food, wood, leather, cigarette butts, toothpaste, milk, sugary
+            materials, coffee grinds, glue, soap, feces, fabric, shoes, paint,
+            the glue on the back of wallpaper, human hair, fingernails, etc
           </p>
-          <p>
-            brown or black in color. Cockroaches require food, water, and places
-            to hide and are, therefore, found in situations where these
-            requirements can be met. They are nocturnal, remaining hidden during
-            the day and becoming active at night to obtain food and water, and
-            to reproduce. The German cockroach commonly occurs in kitchens; the
-            American cockroach appears more often in food establishments; and
-            the Oriental cockroach is usually associated with dampness around
-            sinks or in basements. Cockroaches are not normally encountered by
-            man unless their populations become very large. Cockroaches will eat
-            almost anything: left-over human food, wood, leather, cigarette
-            butts, tooth paste, milk, sugary materials, coffee grinds, glue,
-            soap, feces, fabric, shoes, paint, the glue on the back of
-            wallpaper, human hair, fingernails, etc
-          </p>
-
           <p className="italic font-semibold underline underline-offset-1 py-8">
             Cockroach Facts
           </p>
@@ -177,115 +173,13 @@ function ResidentalPestControl() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-8 w-[20%]">
-        <div className=" rounded-lg p-6 shadow-lg ">
-          <p className="text-xl">Services Area</p>
-          <div className="bg-black h-1 w-35 mt-3 mb-7"></div>
-          <div className="flex flex-col gap-6">
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-              Residental Pest Control
-            </button>
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-            Commercial Pest Control
-            </button>
-            <Link href="/termite-inspection">
-            <button className="shadow-md py-3 rounded-lg border border-neutral-9">
-             Termite Inspection
-            </button></Link>
-            
-          </div>
-        </div>
-        <div className="shadow-lg rounded-lg p-6 flex flex-col">
-          <p className="text-xl">Pest Control Services</p>
-            <div className="bg-black h-1 w-50 mt-3 mb-7"></div>
-         <div className="flex flex-col gap-6">
-         <Link href="/pest-sa-cockroaches">
-         <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-          Pest-SA Cockroaches
-          </button>
-          </Link>
-          <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-            Spider Pest Control
-            </button>
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-            Rodents Pest Control
-            </button>
-            <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-            Birds Pest Control
-            </button>
-          <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-          Bees and Waps Control
-          </button>
-           <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-           Timber  Pest Control
-           </button>
-           <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-           Pest-SA Ants Pest Control
-           </button>
-           <button className="shadow-md p-3 rounded-lg border border-neutral-9">
-           Termites Pest Control
-           </button>
-         </div>
-        </div>
-      </div>
+     <ResidenialSidebar/>
     </div>
   );
 }
 
-function ResidentalOffer() {
-  return (
-    <div>
-      <div className="w-full bg-secondary-2 h-1" />
-      <div className="flex flex-col items-center py-8">
-        <p className="text-3xl text-secondary-2 font-semibold">
-          RESIDENTAL OFFERS
-        </p>
-        <div className="bg-secondary-2 h-1 w-60 mt-3" />
-      </div>
-      <div className="flex justify-between px-[5%] pt-6 pb-[5%]">
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-        <div className="bg-neutral-9 shadow-4 rounded-3xl p-6 w-[25%] py-[6%]">
-          <p className="text-xl text-center">2 FOR 1 PEST TREATMENT -</p>
-          <p className="text-secondary-2 text-3xl text-center pt-[15%] pb-[10%]">
-            $250.00
-          </p>
-          <div className="text-lg py-5">
-            <p>1. Includes External Spider Treatment</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>2. Roof Void Spider Dusting & Rodent Baiting</p>
-            <div className="bg-neutral-7 h-[1px] w-full mt-8 mb-3" />
-            <p>Conditions Apply.  Offer Code: PEST-SA1</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+
+
 const PestSaCockroaches = () => {
   return (
     <div>
@@ -295,8 +189,7 @@ const PestSaCockroaches = () => {
       </div>
       <Navbar />
       <HeroSection />
-      <ResidentalPestControl />
-      {/* <ResidentalOffer /> */}
+      <ResidentialPestControl />
       <ContactUs />
       <Footer />
     </div>

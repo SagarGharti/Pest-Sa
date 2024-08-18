@@ -21,7 +21,7 @@ const InputField = ({
       readOnly={readOnly}
       placeholder={placeholder}
       multiple={multiple}
-      className={`w-full rounded-lg border border-stroke bg-transparent py-3 px-3 outline-none ${
+      className={`w-full rounded-lg border border-stroke bg-transparent py-3 px-3 outline-none focus:border-primary-3 ${
         readOnly ? "bg-gray" : "" // Add a different background color for read-only fields if needed
       } ${
         errors[name] && touched[name] ? "border-danger" : ""

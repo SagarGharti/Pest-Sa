@@ -6,6 +6,7 @@ import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import MessageForm from "../Components/MessageForm/MessageForm";
 import Message from "../Components/Message/Message";
+import Link from "next/link";
 
 function HeroSection (){
     const [isFormOpen, setIsFormOpen] = useState(false);
@@ -31,14 +32,14 @@ function HeroSection (){
             <p className="text-lg ">customer based services, which always put you first.</p>
             </div>
           <div className="flex justify-center">
-          <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">contact us</button>
+             <Link href="/contact">
+             <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">contact us</button>
+             </Link>
           </div>
           <div className="absolute bottom-[-30px] right-8 transform -translate-x-1/2 z-20">
           <div className="relative" onClick={handleMessageClick}>
             <Message />
-            <div className="absolute top-0 right-0 bg-primary-5 text-white rounded-full h-5 w-5 flex items-center justify-center">
-              <p className="text-xs">1</p>
-            </div>
+        
           </div>
         </div>
           {isFormOpen && (

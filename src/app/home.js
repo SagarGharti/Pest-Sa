@@ -35,37 +35,37 @@ function HeroSection() {
         <div className="absolute inset-0 bg-neutral opacity-40"></div>
         <div className="flex justify-between items-center w-full z-10 flex-col lg:flex-row">
           <div className="mx-20">
-            <p className="text-5xl font-semibold text-white w-[520px] mb-4">
+            <p className="text-4xl lg:text-6xl font-semibold text-white mb-4 leading-tight lg:leading-[1.3] w-full lg:w-[600px]">
               Reliable Guaranteed & Affordable Pest Control
             </p>
-            <button className="bg-primary-4 text-white rounded-lg p-2">
+            <button className="bg-primary-4 text-white rounded-lg py-2 px-6">
               Show More
             </button>
           </div>
-          <div className="flex-1 flex justify-end mx-20 relative">
-            <div className="w-[523px] h-[349px] rounded-lg relative">
+<div className="flex-1 flex justify-center lg:justify-end mx-4 lg:mx-20 relative mt-8 lg:mt-0 w-full">
+            <div className="lg:w-[523px] w-full h-[349px] rounded-lg relative lg:mx-0 mx-10">
               <div className="bg-neutral-3 absolute w-full h-[20%] top-0 rounded-lg">
-                <p className="text-2xl text-white font-semibold text-center py-5">
+                <p className="lg:text-2xl text-xl text-white font-semibold text-center py-5">
                   Overall Rating
                 </p>
               </div>
               <div className="bg-white w-full h-[80%] opacity-85 absolute bottom-0 rounded-b-lg"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 py-12">
                 <div className="bg-white relative z-20 p-3 rounded-md mt-15 w-[70%]">
-                  <p className="text-primary-2 text-lg text-center font-medium">
+                  <p className="text-primary-2 lg:text-lg text-md text-center font-medium">
                     Call/SMS - Instant Chat Now
                   </p>
                 </div>
                 <div className="flex gap-2 z-20">
                   <IoIosCall className="h-6 w-6" />
-                  <a href="tel:+0477775224" className="font-bold text-lg">
+                  <a href="tel:+0477775224" className="font-bold lg:text-lg text-md">
                     Call Now{" "}
-                    <span className="text-primary-4">0477 775 224</span>
+                    <span className="text-primary-4 lg:text-lg text-md">0477 775 224</span>
                   </a>
                 </div>
 
                 <div className="bg-secondary-4 w-40 text-white rounded-lg flex z-20 p-2 px-6 gap-3">
-                  <p className="text-xl font-semibold">5</p>
+                  <p className="lg:text-xl text-lg font-semibold">5</p>
                   <div className="flex items-center justify-center">
                     <Star />
                     <Star />
@@ -79,7 +79,7 @@ function HeroSection() {
                     href="https://www.google.com/search?q=your+business+name+reviews"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-bold text-lg underline z-20"
+                    className="font-bold lg:text-lg text-md underline z-20"
                   >
                     Read Reviews
                   </a>
@@ -104,77 +104,48 @@ function HeroSection() {
     </div>
   );
 }
-function PestControlBanner() {
-  return (
-    <div className="w-full bg-neutral mb-12">
-      <p className="text-white text-center text-2xl py-6 font-sans-serif">
-        What Kind of pest control service are you looking for ?
-      </p>
-      <div className="flex items-center justify-between px-20 pb-6">
-        <div className="flex flex-col items-center">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4">
-            <Image src="/termite.png" height={150} width={150} />
-          </div>
-          <p className="text-white">Termites</p>
-        </div>
-        <div className="flex flex-col items-center gap-3">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4 flex items-center justify-center">
-            <Image src="/spider.png" height={60} width={60} />
-          </div>
 
-          <div>
-            <p className="text-white">Spider Pest Control</p>
+
+function PestControlBanner() {
+  const pestServices = [
+    { name: 'Termites', image: '/termite.png', size: 150 },
+    { name: 'Spider Pest Control', image: '/spider.png', size: 60 },
+    { name: 'Rodents Pest Control', image: '/rat.png', size: 70 },
+    { name: 'Ants Pest Control', image: '/ant.png', size: 60 },
+    { name: 'Cockroaches Pest Control', image: '/cockroach.png', size: 60 },
+    { name: 'Birds Pest Control', image: '/pigeon.png', size: 60 },
+    { name: 'Bees and Wasps Control', image: '/bee.png', size: 60 },
+    { name: 'Timber pest control', image: '/cockroach.png', size: 60 },
+  ];
+
+  return (
+    <div className="w-full bg-neutral mb-12 px-4 sm:px-6 lg:px-8">
+      <p className="text-white text-center text-xl sm:text-2xl py-6 font-sans-serif">
+        What Kind of pest control service are you looking for?
+      </p>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-6 pb-6">
+        {pestServices.map((service, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <div className="rounded-full bg-white h-16 w-16 sm:h-20 sm:w-20 lg:h-[90px] lg:w-[90px] border-2 border-secondary-4 flex items-center justify-center">
+              <Image src={service.image} height={service.size} width={service.size} alt={service.name} />
+            </div>
+            <p className="text-white text-center text-xs sm:text-sm mt-2">{service.name}</p>
           </div>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4 flex items-center justify-center">
-            <Image src="/rat.png" height={70} width={70} />
-          </div>
-          <p className="text-white">Rodents Pest Control </p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4 flex items-center justify-center">
-            <Image src="/ant.png" height={60} width={60} />
-          </div>
-          <p className="text-white">Ants Pest Control</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4 flex items-center justify-center">
-            <Image src="/cockroach.png" height={60} width={60} />
-          </div>
-          <p className="text-white">Cockroaches Pest Control</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4 flex items-center justify-center">
-            <Image src="/pigeon.png" height={60} width={60} />
-          </div>
-          <p className="text-white">Birds Pest Conrol</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4 flex items-center justify-center">
-            <Image src="/bee.png" height={60} width={60} />
-          </div>
-          <p className="text-white">Bees and Wasps Control</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="rounded-full bg-white h-[90px] w-[90px] border-2 border-secondary-4 flex items-center justify-center">
-            <Image src="/cockroach.png" height={60} width={60} />
-          </div>
-          <p className="text-white">Timber pest control</p>
-        </div>
+        ))}
       </div>
     </div>
   );
 }
+
 function WelcomeText() {
   return (
-    <div className="flex items-center justify-center flex-col">
-      <p className="text-3xl text-secondary-2 font-semibold my-4">
+    <div className="flex items-center justify-center flex-col lg:px-0 px-[5%]">
+      <p className="lg:text-3xl text-2xl text-secondary-2 font-semibold my-4">
         Welcome to PEST-SA Pest Control
       </p>
       <div className="bg-secondary-2 h-1 w-60"></div>
       <div className="lg:w-[70%] mt-15">
-        <p className="text-center text-xl">
+        <p className="lg:text-center md:text-center text-xl">
           Pest-SA Pest Control serves homes and businesses across all of
           Adelaide and surrounding areas. We provide real solutions for all
           domestic and Commercial Pest control needs. Specializing In Termites,
@@ -190,9 +161,9 @@ function WelcomeText() {
 
 function WhyPestControl() {
   return (
-    <div className="h-auto py-12 w-full bg-neutral-9 rounded-lg my-15 flex flex-col lg:flex-row justify-center gap-20 items-center">
-      <div className="w-[60%] h-[599px]">
-        <p className="text-secondary-2 text-2xl font-semibold">WHY PEST-SA ?</p>
+    <div className="h-auto py-12 w-full bg-neutral-9 rounded-lg my-15 flex flex-col lg:flex-row justify-center gap-20 items-center px-[5%]">
+      <div className="w-full lg:h-[599px] h-auto">
+        <p className="text-secondary-2 lg:text-3xl text-2xl font-semibold">WHY PEST-SA ?</p>
         <div className="bg-secondary-2 h-1 w-30 m-4"></div>
 
         <div className="text-xl flex flex-col gap-4 pt-4">
@@ -214,7 +185,7 @@ function WhyPestControl() {
           </p>
         </div>
       </div>
-      <div className="w-[477px] h-[599px] bg-primary-1 mt-5 rounded-lg flex flex-col items-center justify-center gap-8">
+      <div className="lg:w-[40%] w-[90%] h-auto py-[5%] bg-primary-1 mt-5 rounded-lg flex flex-col items-center justify-center gap-8">
         <div>
           <Image src="/gurantee.png" height={250} width={250} />
         </div>
@@ -234,16 +205,16 @@ function WhyPestControl() {
 
 function ServicesArea() {
   return (
-    <div className="px-[5%]">
-      <div className="w-[30%] flex flex-col">
-        <p className="text-secondary-2 text-2xl font-semibold">Services Area</p>
+    <div className="px-[7%]">
+      <div className="w-full flex flex-col">
+        <p className="text-secondary-2 lg:text-3xl text-2xl font-semibold">Services Area</p>
         <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
       </div>
-      <div className="flex gap-10 my-8 flex-col lg:flex-row">
+      <div className="flex gap-20 my-8 flex-col lg:flex-row">
         <DynamicCard
           title="Residential Pest Control"
           description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... "
-          image="serviceArea.png"
+          image="residental-pest.png"
           buttonText1="Quote"
           buttonText2="Show More"
         />
@@ -252,7 +223,7 @@ function ServicesArea() {
           title="Commercial Pest Control"
           description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
     "
-          image="serviceArea.png"
+          image="commercial-pest.png"
           buttonText1="Quote"
           buttonText2="Show More"
         />
@@ -261,19 +232,12 @@ function ServicesArea() {
           title="Termite Inspection"
           description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
     "
-          image="serviceArea.png"
+          image="termite-pest.png"
           buttonText1="Quote"
           buttonText2="Show More"
         />
 
-        <DynamicCard
-          title="Termite Inspection"
-          description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
-    "
-          image="serviceArea.png"
-          buttonText1="Quote"
-          buttonText2="Show More"
-        />
+    
       </div>
     </div>
   );
@@ -282,11 +246,11 @@ function ServicesArea() {
 function Testimonials() {
   return (
     <div className="bg-[#333333] px-[5%]">
-      <p className="text-white text-2xl font-semibold pt-8">Testimonials</p>
+      <p className="text-white lg:text-3xl text-2xl font-semibold pt-8">Testimonials</p>
       <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
       <div className="h-auto w-full flex flex-col justify-center p-12">
         <div className="flex gap-10 justify-center w-full flex-col lg:flex-row">
-          <p className="text-2xl text-white w-90 self-center">
+          <p className="text-2xl text-white w-90 self-center lg:px-0 px-[5%]">
             Here’s What Our customer have to Say...
           </p>
 
