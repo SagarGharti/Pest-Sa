@@ -1,6 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import clsx from "clsx";
 import React, { useState } from "react";
 import { IoIosClose } from "react-icons/io";
+
+const WA_ACCESS_TOKEN = process.env["WA_ACCESS_TOKEN"];
+const WA_URL = process.env["WA_URL"];
 
 function MessageForm({ handleCloseForm }) {
   const [formData, setFormData] = useState({
@@ -32,65 +36,43 @@ function MessageForm({ handleCloseForm }) {
     setError("");
 
     try {
-      const response = await fetch(
-        "https://graph.facebook.com/v19.0/382086344989913/messages",
-
-        {
-          method: "POST",
-          headers: {
-            Authorization:
-              "Bearer EAALhsZBPT9bgBO55hJ29q7DQjbhAQKOjaBHZC5T5deAg4ZACz1BT2fveZClw9I0bGBJWORvtnfZAVvV3YdrUSK8O7zlZCZCnc8O57YUsY10qCpdmr5dwjSrF20wWE62drp7wsv4pDGiZB5E8G04yoa0yZAUF74xoJewzolyZBcIrI9kJ2ALe7WlSaNeS9w32g78qRCTXJi9uu3EsZCSivVCJqAZD",
-            "Content-Type": "application/json",
-          },
-
-          body: JSON.stringify({
-            messaging_product: "whatsapp",
-            to: formData.phone,
-            type: "template",
-            template: {
-              name: "contact",
-              language: {
-                code: "en",
-              },
-              components: [
-                {
-                  type: "body",
-                  parameters: [
-                    {
-                      type: "text",
-                      text: formData.name,
-                    },
-                    {
-                      type: "text",
-                      text: formData.phone,
-                    },
-                    {
-                      type: "text",
-                      text: formData.message,
-                    },
-                  ],
-                },
-              ],
+      const response = await fetch(WA_URL, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${WA_ACCESS_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          messaging_product: "whatsapp",
+          to: formData.phone,
+          type: "template",
+          template: {
+            name: "contact",
+            language: {
+              code: "en-US",
             },
-          }),
-        }
-      );
-      console.log(response);
-      //   const response = await fetch("/api/sendMessage", {
-      //     method: "POST",
-      //     headers: { "Content-Type": "application/json" },
-      //     body: JSON.stringify(formData),
-      //   });
-
-      //   const result = await response.json();
-
-      //   if (response.ok) {
-      //     alert("Your message has been sent successfully.");
-      //     handleCloseForm();
-      //   } else {
-      //     setError(result.message || "Failed to send message");
-      //   }
-      //   console.log(formData);
+            components: [
+              {
+                type: "body",
+                parameters: [
+                  {
+                    type: "text",
+                    text: formData.name,
+                  },
+                  {
+                    type: "text",
+                    text: formData.phone,
+                  },
+                  {
+                    type: "text",
+                    text: formData.message,
+                  },
+                ],
+              },
+            ],
+          },
+        }),
+      });
     } catch (error) {
       setError(error.message || "An error occurred");
     } finally {
@@ -103,7 +85,7 @@ function MessageForm({ handleCloseForm }) {
       {/* Header */}
       <div className="bg-primary-3 flex py-4 pl-[30%] justify-between pr-6">
         <div className="absolute top-[-30px] left-6">
-          <img src="Message-logo.svg" alt="logo" />
+          <img src="/Message-logo.svg" alt="logo" />
         </div>
         <p className="text-white text-xl font-semibold">Have a question?</p>
         <div onClick={handleCloseForm}>
