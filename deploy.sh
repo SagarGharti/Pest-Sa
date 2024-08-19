@@ -4,7 +4,7 @@
 set -e
 
 # Define variables
-BRANCH="main"
+BRANCH="develop-barsha"
 APP_NAME="your-nextjs-app"
 
 # Fetch the latest changes
