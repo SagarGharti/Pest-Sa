@@ -27,10 +27,7 @@ function HeroSection() {
         </button>
       </div>
       <div className="text-center">
-        <p className="text-3xl font-bold ">
-        Termite Inspection SA
-        </p>
-      
+        <p className="text-3xl font-bold ">Termite Inspection SA</p>
       </div>
       <div className="text-center">
         <p className="text-lg ">
@@ -64,7 +61,6 @@ function HeroSection() {
 }
 
 function ResidentialPestControl() {
-
   return (
     <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between">
       <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
@@ -104,50 +100,45 @@ function ResidentialPestControl() {
             help the South Australian communities.
           </p>
         </div>
-      <div className="w-full flex flex-col md:flex-row h-auto md:h-[600px]">
-  <div className="w-full md:w-[70%] h-[300px] md:h-full relative">
-    <Image 
-      src="/termite-pest.png" 
-      alt="Residential Pest Control" 
-      layout="fill"
-      objectFit="cover"
-    />
-  </div>
-  
-  <div className="w-full md:w-[30%] flex flex-row md:flex-col md:ml-4 h-auto md:h-full mt-4 md:mt-0">
-    <div className="w-1/2 md:w-full h-[200px] md:h-[48%] relative">
-      <Image 
-        src="/termite-pest1.png" 
-        alt="Residential Pest Control" 
-        layout="fill"
-        objectFit="cover"
-      />
-    </div>
-    <div className="w-1/2 md:w-full h-[200px] md:h-[50%] relative ml-4 md:ml-0 md:mt-[4%]">
-      <Image 
-        src="/termite-pest2.png" 
-        alt="Residential Pest Control" 
-        layout="fill"
-        objectFit="cover"
-      />
-    </div>
-  </div>
-</div>
+        <div className="w-full flex flex-col md:flex-row h-auto md:h-[600px]">
+          <div className="w-full md:w-[70%] h-[300px] md:h-full relative">
+            <Image
+              src="/termite-pest.png"
+              alt="Residential Pest Control"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+
+          <div className="w-full md:w-[30%] flex flex-row md:flex-col md:ml-4 h-auto md:h-full mt-4 md:mt-0">
+            <div className="w-1/2 md:w-full h-[200px] md:h-[48%] relative">
+              <Image
+                src="/termite-pest1.png"
+                alt="Residential Pest Control"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+            <div className="w-1/2 md:w-full h-[200px] md:h-[50%] relative ml-4 md:ml-0 md:mt-[4%]">
+              <Image
+                src="/termite-pest2.png"
+                alt="Residential Pest Control"
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-   <ResidenialSidebar/>
+      <ResidenialSidebar />
     </div>
   );
 }
 
-
-
 const TermiteInspection = () => {
   return (
     <div>
-      {" "}
-      <div className="hidden lg:block">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ResidentialPestControl />

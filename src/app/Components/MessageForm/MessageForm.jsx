@@ -1,12 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import clsx from "clsx";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import { IoIosClose } from "react-icons/io";
 
-const WA_ACCESS_TOKEN = process.env["WA_ACCESS_TOKEN"];
-const WA_URL = process.env["WA_URL"];
-
-function MessageForm({ handleCloseForm }) {
+function MessageForm({ handleCloseForm, width = "" }) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -15,6 +13,8 @@ function MessageForm({ handleCloseForm }) {
   const [agreedToTerms, setAgreedToTerms] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
+
+  const captchaRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,53 +35,31 @@ function MessageForm({ handleCloseForm }) {
     setIsLoading(true);
     setError("");
 
-    try {
-      const response = await fetch(WA_URL, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${WA_ACCESS_TOKEN}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          messaging_product: "whatsapp",
-          to: formData.phone,
-          type: "template",
-          template: {
-            name: "contact",
-            language: {
-              code: "en-US",
-            },
-            components: [
-              {
-                type: "body",
-                parameters: [
-                  {
-                    type: "text",
-                    text: formData.name,
-                  },
-                  {
-                    type: "text",
-                    text: formData.phone,
-                  },
-                  {
-                    type: "text",
-                    text: formData.message,
-                  },
-                ],
-              },
-            ],
-          },
-        }),
-      });
-    } catch (error) {
-      setError(error.message || "An error occurred");
-    } finally {
+    const recaptchaValue = captchaRef.current.getValue();
+    captchaRef.current.reset();
+
+    const res = await fetch("/api/submit-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        recaptchaValue,
+      }),
+    });
+
+    const data = await res.json();
+    console.log(data);
+
+    if (res) {
       setIsLoading(false);
     }
   };
 
   return (
-    <div className="w-[454px] relative z-9999">
+    <div
+      className={width ? `w-full` : `xl:w-[454px]` + ` w-full  relative z-9999`}
+    >
       {/* Header */}
       <div className="bg-primary-3 flex py-4 pl-[30%] justify-between pr-6">
         <div className="absolute top-[-30px] left-6">
@@ -98,7 +76,7 @@ function MessageForm({ handleCloseForm }) {
         onSubmit={handleSendToAPI}
         className="bg-white px-8 py-6 rounded-sm"
       >
-        <div className="bg-neutral-9 rounded-lg p-3">
+        <div className="bg-neutral-9 rounded-lg p-3 text-neutral-5">
           <p>Enter your question below and we will get right back to you</p>
         </div>
         <div className="py-4">
@@ -142,6 +120,13 @@ function MessageForm({ handleCloseForm }) {
           </p>
         </div>
         {error && <p className="text-red-500 mb-2">{error}</p>}
+        <div className="mt-2 mb-4 w-full">
+          <ReCAPTCHA
+            sitekey={process.env["NEXT_PUBLIC_GOOGLE_SITE_KEY"]}
+            onChange={() => {}}
+            ref={captchaRef}
+          />
+        </div>
         <button
           type="submit"
           //   className="bg-primary-3 "

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import * as Yup from "yup";
@@ -34,12 +35,14 @@ function HeroSection() {
   return (
     <div className=" relative w-full flex flex-col gap-8 items-center justify-center py-16">
       <div>
-        <button className=" bg-secondary-9 px-6 py-2 rounded-full">
+        <button className=" bg-secondary-9 px-6 py-2 rounded-full text-neutral-4">
           <sapn className="text-primary">Pest-SA</sapn> / Testominals
         </button>
       </div>
       <div className="text-center">
-        <p className="text-3xl font-bold ">Contact Pest-SA Pest control.</p>
+        <p className="text-title-sm xl:text-3xl font-bold ">
+          Contact Pest-SA Pest control.
+        </p>
       </div>
       <div className="text-center">
         <p className="text-lg ">
@@ -93,10 +96,10 @@ function ContactForm() {
     }
   };
   return (
-    <div className="flex flex-col md:flex-row w-full p-[5%] bg-white gap-12 h-auto">
-      <div className="border border-neutral-9 px-6 py-8 w-full">
+    <div className="flex flex-col md:flex-row w-full p-[5%] bg-white gap-12 h-auto text-neutral-4">
+      <div className="border border-neutral-9 px-6 w-full py-8 relative">
         <p className="text-3xl font-bold pb-6">Contact Form</p>
-        <Formik
+        {/* <Formik
           initialValues={initialState}
           onSubmit={handleSubmit}
           validationSchema={FORM_VALIDATION}
@@ -161,16 +164,33 @@ function ContactForm() {
               </div>
             </Form>
           )}
-        </Formik>
+        </Formik> */}
+
+        <MessageForm width="w-full" />
       </div>
 
-      <div className="border w-full border-neutral-9 px-6 py-8 ">
+      <div className="border w-full border-neutral-9 px-6 text-neutral-4 py-8 items-center">
         <p className="text-3xl font-bold pb-6">Connect with us</p>
         <div className="leading-8 text-neutral-5">
-          <p>5 Limerick Street Salisbury Fowns SA5108. Australia</p>
-          <p>0477775224, 0420348484</p>
-          <p>info@pestsaadelaide.com.au</p>
-          <p>Mon-Sat: 7:00 AM - 18:00 PM</p>
+          <div className="flex gap-2 items-center">
+            <img src="/MapPin.svg" alt="map pin" />
+            <p>5 Limerick Street Salisbury Fowns SA5108. Australia</p>
+          </div>
+
+          <div className="flex gap-2 items-center">
+            <img src="/solar_phone-bold-gray.svg" alt="map pin" />
+            <p>0477775224, 0420348484</p>
+          </div>
+
+          <div className="flex gap-2 items-center">
+            <img src="/EnvelopeSimple.svg" alt="map pin" />
+            <p>info@pestsaadelaide.com.au</p>
+          </div>
+
+          <div className="flex gap-2 items-center">
+            <img src="/mdi_clock-outline.svg" alt="map pin" />
+            <p>Mon-Sat: 7:00 AM - 18:00 PM</p>
+          </div>
         </div>
       </div>
     </div>
@@ -198,9 +218,7 @@ const Contact = () => {
 
   return (
     <div>
-      <div className="hidden lg:block">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ContactForm />

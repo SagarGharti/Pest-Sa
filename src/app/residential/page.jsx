@@ -6,32 +6,30 @@ import MessageForm from "../Components/MessageForm/MessageForm";
 import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
-import Image from 'next/image';
-import ResidentialSidebar from '../Components/ResidentialSidebar/index.jsx'
-
+import Image from "next/image";
+import ResidentialSidebar from "../Components/ResidentialSidebar/index.jsx";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
 
   const handleMessageClick = () => {
-    setIsFormOpen(!isFormOpen);;
+    setIsFormOpen(!isFormOpen);
   };
 
   const handleCloseForm = () => {
     setIsFormOpen(false);
   };
   return (
-    <div className="w-full flex flex-col gap-8 items-center justify-center py-16 relative">
+    <div className="w-full flex flex-col gap-8 items-center justify-center py-16 relative px-10">
       <div>
-        <button className=" bg-secondary-9 px-6 py-2 rounded-full">
+        <button className=" bg-secondary-9 px-6 py-2 rounded-full text-neutral-4">
           <sapn className="text-primary">Pest-SA</sapn> / Residental
         </button>
       </div>
       <div className="text-center">
-        <p className="text-3xl font-bold ">
-        Residental Pest control SA
+        <p className="text-title-sm xl:text-3xl font-bold ">
+          Residental Pest control SA
         </p>
-      
       </div>
       <div className="text-center">
         <p className="text-lg ">
@@ -44,20 +42,19 @@ function HeroSection() {
       </div>
       <div className="flex justify-center">
         <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">
-          contact us
+          Contact us
         </button>
       </div>
-      <div className="absolute bottom-[-30px] right-8 transform -translate-x-1/2 z-20">
-          <div className="relative" onClick={handleMessageClick}>
-            <Message />
-           
-          </div>
+      <div className="absolute -bottom-8 right-8 transform -translate-x-1/2 z-20">
+        <div className="relative" onClick={handleMessageClick}>
+          <Message />
         </div>
-          {isFormOpen && (
-          <div className="absolute top-[-4px] right-15">
-            <MessageForm handleCloseForm={handleCloseForm} />
-          </div>
-        )}
+      </div>
+      {isFormOpen && (
+        <div className="absolute bottom-[2.4rem] xl:right-15 cursor-pointer">
+          <MessageForm handleCloseForm={handleCloseForm} />
+        </div>
+      )}
     </div>
   );
 }
@@ -68,12 +65,12 @@ function ResidentialPestControl() {
       <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
         <div className="text-base sm:text-lg leading-7 text-justify">
           <div className="w-full">
-            <p className="text-2xl sm:text-3xl text-secondary-2 font-semibold">
+            <p className="text-2xl sm:text-3xl text-secondary-2 font-semibold mt-10">
               Residential Pest Control
             </p>
             <div className="bg-secondary-2 h-1 w-32 sm:w-40 mt-3 mb-6"></div>
           </div>
-          <p className="mb-4">
+          <p className="mb-4 text-neutral-4">
             Pest-SA Pest Control, believe in providing a safe and effective
             solution to prevent pest from entering you home. As nature lovers we
             love all insects just as long there not inside your home. We take
@@ -85,21 +82,23 @@ function ResidentialPestControl() {
             All treatments come with guaranties if any pests come back we will
             return to your property.
           </p>
-          <p className="mb-4">
+          <p className="mb-4 text-neutral-4">
             We are industry leaders in competitive pricing, Deliver dependable
             customer satisfaction and fully guarantee our service. Rest assure
             Pest-SA Pest control is certified and accredited with South
             Australian Health the Controlled substances Pesticide Regulation. We
             are Fully Licensed and Insured Pest Control company.
           </p>
-          <p className="mb-4">We work Saturday and Sunday with no extra charge.</p>
+          <p className="mb-4 text-neutral-4">
+            We work Saturday and Sunday with no extra charge.
+          </p>
         </div>
         <div className="w-full">
-          <Image 
-            src="/residental-pest.png" 
-            alt="Residential Pest Control" 
-            width={800} 
-            height={400} 
+          <Image
+            src="/residental-pest.png"
+            alt="Residential Pest Control"
+            width={800}
+            height={400}
             layout="responsive"
           />
         </div>
@@ -109,13 +108,10 @@ function ResidentialPestControl() {
   );
 }
 
-
 const Residential = () => {
   return (
-    <div>   <div className="hidden lg:block">
-    <Header />
-  </div>
-     
+    <div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ResidentialPestControl />

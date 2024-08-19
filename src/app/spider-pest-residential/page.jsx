@@ -27,10 +27,7 @@ function HeroSection() {
         </button>
       </div>
       <div className="text-center">
-        <p className="text-3xl font-bold ">
-        Pest-SA Spider Pest Control.
-        </p>
-       
+        <p className="text-3xl font-bold ">Pest-SA Spider Pest Control.</p>
       </div>
       <div className="text-center">
         <p className="text-lg ">
@@ -88,7 +85,11 @@ function ResidentalPestControl() {
             <div className="bg-secondary-2 h-1 w-40 mt-3 mb-6"></div>
           </div>
           <div>
-            <img src="/spider-pest.png" alt="Spider Pest Control" className="w-full h-auto" />
+            <img
+              src="/spider-pest.png"
+              alt="Spider Pest Control"
+              className="w-full h-auto"
+            />
           </div>
           <div>
             <p className="font-semibold py-6">
@@ -100,43 +101,42 @@ function ResidentalPestControl() {
               webs. Adelaide has more species of poisonous spiders and the
               weather is perfect for them to multiply and spread infection. In
               fact, some spider bites can lead to poisoning and even death, this
-              is majorly due to the toxins in spiders. Moreover, spider webs
-              can be a hub for dust and debris. Spiders can make your home
-              or office look unhygienic, and they also cause phobia among folks. Some
+              is majorly due to the toxins in spiders. Moreover, spider webs can
+              be a hub for dust and debris. Spiders can make your home or office
+              look unhygienic, and they also cause phobia among folks. Some
               species of spider can weave their webs inside and outside the
               building, which can make the situation worse. They are usually
               present in wall cracks, air vent areas, the roof of the home,
               corner walls, etc. In the case of a spider bite, it is crucial to
-              seek immediate medical advice, as it can lead to an allergic reaction.
-              Some species of spiders are extremely venomous and can lead to
-              death.
+              seek immediate medical advice, as it can lead to an allergic
+              reaction. Some species of spiders are extremely venomous and can
+              lead to death.
             </p>
 
             <p className="font-semibold py-6">
               Common Signs of Spider Infestation at Home or Office
             </p>
             <p>
-              If you have come across spiders anywhere in your home or office, there
-              are high chances of spider infestation. Here are the common signs
-              of it. It is always advisable to approach a reputable pest control
-              company to get rid of spiders.
+              If you have come across spiders anywhere in your home or office,
+              there are high chances of spider infestation. Here are the common
+              signs of it. It is always advisable to approach a reputable pest
+              control company to get rid of spiders.
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 You may find spider webs inside and outside the home, garden, or
-                garage. The web size and shape can vary, but the damage remains the
-                same and can lead to several health issues if the food and water
-                are contaminated.
+                garage. The web size and shape can vary, but the damage remains
+                the same and can lead to several health issues if the food and
+                water are contaminated.
               </li>
               <li>
-                Some spiders are capable of living inside the gaps and cracks
-                of buildings. It is a perfect place for them to mate, lay
-                eggs, and multiply.
+                Some spiders are capable of living inside the gaps and cracks of
+                buildings. It is a perfect place for them to mate, lay eggs, and
+                multiply.
               </li>
               <li>
-                Other species of spiders need a moisture environment and
-                can be found near walls, basements, sheds, and kitchen
-                cabinets.
+                Other species of spiders need a moisture environment and can be
+                found near walls, basements, sheds, and kitchen cabinets.
               </li>
               <li>
                 You may also notice spiders and webs in the attic of the home,
@@ -148,11 +148,11 @@ function ResidentalPestControl() {
               </li>
             </ul>
             <p>
-              It is essential to opt for Pest Control as the situation gets worse
-              during autumn. When the temperature drops, spiders look for a place
-              to mate and multiply. Approach a credible company like Pest-SA Pest
-              Control as soon as possible, or the spider eggs can lead to more
-              spiders around your home or office.
+              It is essential to opt for Pest Control as the situation gets
+              worse during autumn. When the temperature drops, spiders look for
+              a place to mate and multiply. Approach a credible company like
+              Pest-SA Pest Control as soon as possible, or the spider eggs can
+              lead to more spiders around your home or office.
             </p>
           </div>
           <div>
@@ -162,16 +162,17 @@ function ResidentalPestControl() {
             <p>
               The primary way for spider entry is via building gaps like
               windows, doors, and under the main gate. The best way to prevent
-              spider infestation is to avoid spiders entering the home.
-              Routine cleaning of the home, garden, garage, and kitchen is crucial.
-              Never leave belongings on the floor for a long time. Spiders can be
-              easily trapped using a glass jar and then discarded outside.
+              spider infestation is to avoid spiders entering the home. Routine
+              cleaning of the home, garden, garage, and kitchen is crucial.
+              Never leave belongings on the floor for a long time. Spiders can
+              be easily trapped using a glass jar and then discarded outside.
             </p>
             <p>
               When lights are not in use, switch them off. All insects,
               especially spiders, can be easily attracted and enter the home.
               Besides these prevention methods, it is advisable to seek the help
-              of professionals to get rid of spiders at home or office in Adelaide.
+              of professionals to get rid of spiders at home or office in
+              Adelaide.
             </p>
           </div>
           <div>
@@ -181,12 +182,12 @@ function ResidentalPestControl() {
             <p>
               If the spider issue is not addressed initially, it can lead to a
               huge problem. Approach a good pest control company like Pest-SA
-              Pest Control. The technical and skilled professionals use different
-              spider removal methods to eliminate spiders and eggs from the home
-              and office building. The skilled staff are well aware of the
-              behavior of each species and use the right control methods to
-              eradicate them from your home, ensuring it remains a hygienic and
-              safe place for everyone.
+              Pest Control. The technical and skilled professionals use
+              different spider removal methods to eliminate spiders and eggs
+              from the home and office building. The skilled staff are well
+              aware of the behavior of each species and use the right control
+              methods to eradicate them from your home, ensuring it remains a
+              hygienic and safe place for everyone.
             </p>
             <p>
               Pest Control Adelaide follows unique treatment methods to prevent
@@ -202,7 +203,7 @@ function ResidentalPestControl() {
           </div>
         </div>
       </div>
-      <ResidenialSidebar/>
+      <ResidenialSidebar />
     </div>
   );
 }
@@ -210,10 +211,7 @@ function ResidentalPestControl() {
 const SpiderResidential = () => {
   return (
     <div>
-      {" "}
-      <div className="hidden lg:block">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ResidentalPestControl />

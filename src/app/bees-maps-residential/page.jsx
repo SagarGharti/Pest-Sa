@@ -27,7 +27,7 @@ function HeroSection() {
       </div>
       <div className="text-center">
         <p className="text-3xl font-bold ">
-        Pest-SA Bees and Waps Pest Control.
+          Pest-SA Bees and Waps Pest Control.
         </p>
       </div>
       <div className="text-center">
@@ -69,7 +69,11 @@ function ResidentialPestControl() {
             </p>
             <div className="bg-secondary-2 h-1 w-32 sm:w-40 mt-3 mb-6"></div>
             <div className="w-full">
-              <img src="/bees-pest.png" alt="Bees and Wasps Pest Control" className="w-full h-auto" />
+              <img
+                src="/bees-pest.png"
+                alt="Bees and Wasps Pest Control"
+                className="w-full h-auto"
+              />
             </div>
             <div className="mt-6">
               <p className="font-semibold py-4 sm:py-8">
@@ -81,8 +85,8 @@ function ResidentialPestControl() {
                 and around your home or office building. They usually settle
                 around chimney vents, tree, and garden area. It is very
                 difficult to get rid of them, spraying water won't help. These
-                tiny insects are usually in search of moisture and The city
-                of Adelaide is the perfect home for them. Spraying water can be
+                tiny insects are usually in search of moisture and The city of
+                Adelaide is the perfect home for them. Spraying water can be
                 more inviting as well.
               </p>
               <p className="mb-4">
@@ -96,7 +100,9 @@ function ResidentialPestControl() {
             </div>
 
             <div className="mt-6">
-              <p className="font-semibold py-4 sm:py-8">Prevention of Bees and Wasps</p>
+              <p className="font-semibold py-4 sm:py-8">
+                Prevention of Bees and Wasps
+              </p>
               <p className="mb-4">
                 Getting rid of bees and wasp is very difficult, you can still
                 try your level best to prevent them during summer. You can keep
@@ -126,13 +132,30 @@ function ResidentialPestControl() {
                 Tips to prevent bees and wasps
               </p>
               <ul className="list-decimal pl-6 mb-4">
-                <li className="mb-2">Discard any fallen fruit or food items from the garden area.</li>
-                <li className="mb-2">Never leave the uneaten pet food outside the home or near the balcony.</li>
-                <li className="mb-2">Discard the bins and make sure to use a tight-fitting lid so that insects cannot enter inside. Limit the water sources.</li>
-                <li className="mb-2">Always cover the food when you are out of the home, especially during picnics and barbeques.</li>
-                <li className="mb-2">Make sure to use clean containers with straw to drink, discard cans and bottles with lids.</li>
+                <li className="mb-2">
+                  Discard any fallen fruit or food items from the garden area.
+                </li>
+                <li className="mb-2">
+                  Never leave the uneaten pet food outside the home or near the
+                  balcony.
+                </li>
+                <li className="mb-2">
+                  Discard the bins and make sure to use a tight-fitting lid so
+                  that insects cannot enter inside. Limit the water sources.
+                </li>
+                <li className="mb-2">
+                  Always cover the food when you are out of the home, especially
+                  during picnics and barbeques.
+                </li>
+                <li className="mb-2">
+                  Make sure to use clean containers with straw to drink, discard
+                  cans and bottles with lids.
+                </li>
                 <li className="mb-2">Keep the child and pets away.</li>
-                <li className="mb-2">Always keep the windows and door shut so that the bees and wasp don't enter your home.</li>
+                <li className="mb-2">
+                  Always keep the windows and door shut so that the bees and
+                  wasp don't enter your home.
+                </li>
               </ul>
             </div>
             <div className="mt-6">
@@ -147,9 +170,9 @@ function ResidentialPestControl() {
               </p>
               <p className="mb-4">
                 Once the nest is built, the size can increase at a very rapid
-                speed, the situation gets worst in summers. It is best to
-                hire Pest-Ex Adelaide during the spring season. They will
-                eradicate the problem of bees and wasps completely.
+                speed, the situation gets worst in summers. It is best to hire
+                Pest-Ex Adelaide during the spring season. They will eradicate
+                the problem of bees and wasps completely.
               </p>
             </div>
             <div className="mt-6">
@@ -157,7 +180,10 @@ function ResidentialPestControl() {
                 Bees and Wasps are attracted to
               </p>
               <ul className="list-disc pl-6 mb-4">
-                <li className="mb-2">Easily accessible raw and cooked sweet foods like fruit, soft drinks, wine, water</li>
+                <li className="mb-2">
+                  Easily accessible raw and cooked sweet foods like fruit, soft
+                  drinks, wine, water
+                </li>
                 <li className="mb-2">Open pet food.</li>
                 <li className="mb-2">Recently mown lawn area.</li>
               </ul>
@@ -192,19 +218,15 @@ function ResidentialPestControl() {
           </div>
         </div>
       </div>
-     <ResidenialSidebar/>
+      <ResidenialSidebar />
     </div>
   );
 }
 
-
 const BeesMapResidential = () => {
   return (
     <div>
-      {" "}
-      <div className="hidden lg:block">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ResidentialPestControl />

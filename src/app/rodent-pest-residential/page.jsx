@@ -26,10 +26,7 @@ function HeroSection() {
         </button>
       </div>
       <div className="text-center">
-        <p className="text-3xl font-bold ">
-        Pest-SA Rodents Pest Control.
-        </p>
-       
+        <p className="text-3xl font-bold ">Pest-SA Rodents Pest Control.</p>
       </div>
       <div className="text-center">
         <p className="text-lg ">
@@ -71,7 +68,11 @@ function ResidentalPestControl() {
             <div className="bg-secondary-2 h-1 w-32 sm:w-40 mt-3 mb-6"></div>
           </div>
           <div className="w-full">
-            <img src="/rodent-pest.png" alt="Rodent Pest Control" className="w-full h-auto" />
+            <img
+              src="/rodent-pest.png"
+              alt="Rodent Pest Control"
+              className="w-full h-auto"
+            />
           </div>
           <div>
             <p className="font-semibold py-4 sm:py-8">
@@ -79,17 +80,17 @@ function ResidentalPestControl() {
             </p>
             <p className="mb-4">
               Rats are not only creepy but can also cause a lot of damage. The
-              teeth of rodents continue to grow, which can damage hard substances
-              like plastic pipes, electrical wiring, and contaminate food, leading
-              to dangerous diseases like Tuberculosis, tapeworms, plagues,
-              Salmonellosis, etc. Rodents, including both rats and mice, can
-              cause sleepless nights and damage properties and belongings. They
-              thrive in homes as it provides the perfect environment for them to
-              live, settle, and multiply. Commonly found under cupboards, near
-              water heaters, in parking areas, gardens, etc., rodents are very
-              common in Adelaide, South Australia. It is essential to opt for
-              Pest Control. Choose a reliable company like Pest-SA Pest Control
-              to keep your home rodent-free.
+              teeth of rodents continue to grow, which can damage hard
+              substances like plastic pipes, electrical wiring, and contaminate
+              food, leading to dangerous diseases like Tuberculosis, tapeworms,
+              plagues, Salmonellosis, etc. Rodents, including both rats and
+              mice, can cause sleepless nights and damage properties and
+              belongings. They thrive in homes as it provides the perfect
+              environment for them to live, settle, and multiply. Commonly found
+              under cupboards, near water heaters, in parking areas, gardens,
+              etc., rodents are very common in Adelaide, South Australia. It is
+              essential to opt for Pest Control. Choose a reliable company like
+              Pest-SA Pest Control to keep your home rodent-free.
             </p>
           </div>
           <div>
@@ -97,16 +98,15 @@ function ResidentalPestControl() {
               Common Signs of Rodents at Home
             </p>
             <p className="mb-4">
-              Rats are a nuisance and can make your home very uncomfortable. Here
-              are some common signs of rodents that you should not ignore:
+              Rats are a nuisance and can make your home very uncomfortable.
+              Here are some common signs of rodents that you should not ignore:
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2">
-                Frequent scratching of walls, roofs, and other building surfaces.
+                Frequent scratching of walls, roofs, and other building
+                surfaces.
               </li>
-              <li className="mb-2">
-                Spoiling of items inside the home.
-              </li>
+              <li className="mb-2">Spoiling of items inside the home.</li>
               <li className="mb-2">
                 Ammonia-like smell, which can be overwhelming in enclosed areas.
               </li>
@@ -114,12 +114,8 @@ function ResidentalPestControl() {
                 Bite marks on wood, plastic, and other household items, which
                 can cause damage, especially if they bite electrical wires.
               </li>
-              <li className="mb-2">
-                Contaminating food and water.
-              </li>
-              <li className="mb-2">
-                Build-up of rat excreta, fur, and sheds.
-              </li>
+              <li className="mb-2">Contaminating food and water.</li>
+              <li className="mb-2">Build-up of rat excreta, fur, and sheds.</li>
             </ul>
           </div>
           <div>
@@ -127,16 +123,17 @@ function ResidentalPestControl() {
               Tips to Keep Rats and Mice Away
             </p>
             <p className="mb-4">
-              Rodents can carry deadly diseases, so it's important to address
-              any infestations promptly. In addition to contacting Pest Control
-              Adelaide, follow these prevention tips:
+              Rodents can carry deadly diseases, so it&apos;s important to
+              address any infestations promptly. In addition to contacting Pest
+              Control Adelaide, follow these prevention tips:
             </p>
             <ul className="list-disc pl-6 mb-4">
               <li className="mb-2">
                 Always cover all food items in airtight containers.
               </li>
               <li className="mb-2">
-                Maintain a routine clean-up of your home, garage, and garden area.
+                Maintain a routine clean-up of your home, garage, and garden
+                area.
               </li>
               <li className="mb-2">
                 Dispose of rubbish bags outside promptly to avoid them becoming
@@ -168,8 +165,8 @@ function ResidentalPestControl() {
               </li>
               <li className="mb-2">
                 Check drains and sewer pipes, and ensure toilet seats are closed
-                after use. Also, inspect drain pipes and take action if maintenance
-                is needed.
+                after use. Also, inspect drain pipes and take action if
+                maintenance is needed.
               </li>
             </ul>
           </div>
@@ -179,9 +176,9 @@ function ResidentalPestControl() {
             </p>
             <p className="mb-4">
               If you suspect rodents in your home, secure foodstuffs by covering
-              them and ensure dedicated use of cookware and cutlery after washing.
-              It is highly recommended to get professional rodent removal
-              treatment.
+              them and ensure dedicated use of cookware and cutlery after
+              washing. It is highly recommended to get professional rodent
+              removal treatment.
             </p>
             <p className="mb-4">
               Pest-SA Pest Control offers reliable rodent control methods
@@ -202,7 +199,7 @@ function ResidentalPestControl() {
           </div>
         </div>
       </div>
-    <ResidenialSidebar/>
+      <ResidenialSidebar />
     </div>
   );
 }
@@ -210,10 +207,7 @@ function ResidentalPestControl() {
 const RodentResidential = () => {
   return (
     <div>
-      {" "}
-      <div className="hidden lg:block">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ResidentalPestControl />

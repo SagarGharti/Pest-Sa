@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import ContactUs from "../Components/Contact";
 import Footer from "../Components/Footer";
@@ -7,7 +8,7 @@ import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
 import Link from "next/link";
-import ResidentialSidebar from '../Components/ResidentialSidebar/index.jsx'
+import ResidentialSidebar from "../Components/ResidentialSidebar/index.jsx";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -27,16 +28,14 @@ function HeroSection() {
         </button>
       </div>
       <div className="text-center">
-        <p className="text-3xl font-bold ">
-        Commercial Pest Control SA
-        </p>
-       
+        <p className="text-3xl font-bold ">Commercial Pest Control SA</p>
       </div>
       <div className="flex justify-center">
         <p className="text-lg w-[60%]  ">
-        we have worked with each other for a long period of time. Our focus is on building friendly customer based services, which always put you first.
+          we have worked with each other for a long period of time. Our focus is
+          on building friendly customer based services, which always put you
+          first.
         </p>
-       
       </div>
       <div className="flex justify-center">
         <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">
@@ -57,8 +56,6 @@ function HeroSection() {
   );
 }
 
-
-
 function ResidentialPestControl() {
   return (
     <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between">
@@ -76,7 +73,7 @@ function ResidentialPestControl() {
             client service manager for our commercial pest control customers, we
             know what you need, when you need it and the best way to approach
             the problem. Pest SA Pest Control are your partners in keeping your
-            premises and workplaces free from pests. We'll work with you to
+            premises and workplaces free from pests. We&apos;ll work with you to
             determine the best plan to meet the needs of your business, then
             estimate the job using our transparent quoting policy – with no
             hidden costs. Our skilled technicians will act quickly to treat the
@@ -101,7 +98,11 @@ function ResidentialPestControl() {
           </ul>
         </div>
         <div className="w-full">
-          <img src="/commercial-pest.png" alt="Commercial Pest Control" className="w-full h-auto" />
+          <img
+            src="/commercial-pest.png"
+            alt="Commercial Pest Control"
+            className="w-full h-auto"
+          />
         </div>
       </div>
       <ResidentialSidebar />
@@ -109,22 +110,14 @@ function ResidentialPestControl() {
   );
 }
 
-
-
-
-
-
 const CommercialResidential = () => {
   return (
     <div>
-      {" "}
-      <div className="hidden lg:block">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ResidentialPestControl />
-      {/* <ResidentalOffer /> */}
+
       <ContactUs />
       <Footer />
     </div>

@@ -26,10 +26,7 @@ function HeroSection() {
         </button>
       </div>
       <div className="text-center">
-        <p className="text-3xl font-bold ">
-        Pest-SA Cockroaches
-        </p>
-       
+        <p className="text-3xl font-bold ">Pest-SA Cockroaches</p>
       </div>
       <div className="text-center">
         <p className="text-lg ">
@@ -62,10 +59,7 @@ function HeroSection() {
   );
 }
 
-
 function ResidentialPestControl() {
- 
-
   return (
     <div className="bg-neutral-10 p-4 md:p-[5%] flex flex-col lg:flex-row lg:justify-between">
       <div className="w-full lg:w-[65%] flex flex-col gap-8 mb-8 lg:mb-0">
@@ -173,20 +167,15 @@ function ResidentialPestControl() {
           </p>
         </div>
       </div>
-     <ResidenialSidebar/>
+      <ResidenialSidebar />
     </div>
   );
 }
 
-
-
 const PestSaCockroaches = () => {
   return (
     <div>
-      {" "}
-      <div className="hidden lg:block">
-        <Header />
-      </div>
+      <Header />
       <Navbar />
       <HeroSection />
       <ResidentialPestControl />
