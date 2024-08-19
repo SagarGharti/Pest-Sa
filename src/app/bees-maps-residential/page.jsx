@@ -84,10 +84,10 @@ function ResidentialPestControl() {
                 they can arrive at a place with their brigade and make a hive in
                 and around your home or office building. They usually settle
                 around chimney vents, tree, and garden area. It is very
-                difficult to get rid of them, spraying water won't help. These
-                tiny insects are usually in search of moisture and The city of
-                Adelaide is the perfect home for them. Spraying water can be
-                more inviting as well.
+                difficult to get rid of them, spraying water won&apos;t help.
+                These tiny insects are usually in search of moisture and The
+                city of Adelaide is the perfect home for them. Spraying water
+                can be more inviting as well.
               </p>
               <p className="mb-4">
                 Moreover, these bees and wasps are super active during the
@@ -154,7 +154,7 @@ function ResidentialPestControl() {
                 <li className="mb-2">Keep the child and pets away.</li>
                 <li className="mb-2">
                   Always keep the windows and door shut so that the bees and
-                  wasp don't enter your home.
+                  wasp don&apos;t enter your home.
                 </li>
               </ul>
             </div>

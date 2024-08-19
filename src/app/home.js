@@ -195,7 +195,7 @@ function WhyPestControl() {
           <p>
             7. We strive to be on the fore-front of new technologies, techniques
             and products that will enable us to deliver our services in more
-            efficient manner. The more effective and successful we'll be at
+            efficient manner. The more effective and successful we&apos;ll be at
             managing your pest related problems
           </p>
         </div>

@@ -93,9 +93,9 @@ function ResidentialPestControl() {
             </p>
             <p className="mb-4">
               Nobody knows where the ants get into the home. It can be via
-              garden, window or door, you won't want them to get into your home
-              or contaminate the food cupboards and kitchen. The tiny species
-              can be a real nuisance.
+              garden, window or door, you won&apos;t want them to get into your
+              home or contaminate the food cupboards and kitchen. The tiny
+              species can be a real nuisance.
             </p>
           </div>
           <div className="mt-6">
@@ -106,8 +106,9 @@ function ResidentialPestControl() {
               The internet is flooded with many tips to get rid of ants, but
               unfortunately, it is all temporary. In order to fix the issue of
               ants and get rid of them permanently you should opt for
-              professional ant's pest control at Adelaide. A good company like
-              Pest-SA can help you to get an ant's free home permanently.
+              professional ant&apos;s pest control at Adelaide. A good company
+              like Pest-SA can help you to get an ant&apos;s free home
+              permanently.
             </p>
           </div>
           <div className="mt-6">
@@ -153,10 +154,10 @@ function ResidentialPestControl() {
             </p>
             <p className="mb-4">
               You may have explored many tips and tricks to prevent the ants but
-              still, it is important to take service of professional ant's pest
-              control to eradicate the root cause. The pest team consists of a
-              skilled professional who are trained and experiences to sort out
-              ant infestations.
+              still, it is important to take service of professional ant&apos;s
+              pest control to eradicate the root cause. The pest team consists
+              of a skilled professional who are trained and experiences to sort
+              out ant infestations.
             </p>
           </div>
           <div className="mt-6">
@@ -167,7 +168,7 @@ function ResidentialPestControl() {
               in the field. The team has a detailed knowledge regarding every
               species of ant and they make use of it to control ant infections.
               The primary goal is to safeguard your family with all sort of
-              ant's infestation. The high-quality safety reassures that the
+              ant&apos;s infestation. The high-quality safety reassures that the
               problem is dealt fully and the home is a safe place for everyone
             </p>
           </div>
