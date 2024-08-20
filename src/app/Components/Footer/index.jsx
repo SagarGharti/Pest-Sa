@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io5";
@@ -17,14 +18,22 @@ function Footer() {
   </div>
   <div className="w-full lg:w-1/6 flex flex-col gap-3 mb-6 lg:mb-0">
     <p className="text-xl font-semibold text-white">Services</p>
-    <p className="text-white">Residential Pest Control</p>
-    <p className="text-white">Commercial Pest Control</p>
+  <Link  href= "/residential">
+  <p className="text-white">Residential Pest Control</p>
+  </Link>
+<Link  href= "/commercial-residential">
+<p className="text-white">Commercial Pest Control</p>
+</Link>
     <p className="text-white">Pest Prevention</p>
   </div>
         <div className="w-full lg:w-1/5 flex flex-col gap-3 mb-6 lg:mb-0">
           <p className="text-xl font-semibold text-white">Company</p>
-          <p className="text-white">About</p>
-          <p className="text-white">Contact</p>
+        <Link href="/about">
+        <p className="text-white">About</p>
+        </Link>
+         <Link href="/contact">
+         <p className="text-white">Contact</p>
+         </Link>
           <p className="text-white">Privacy Policy</p>
           <p className="text-white">Reservation Conditions</p>
         </div>
