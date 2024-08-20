@@ -42,8 +42,12 @@ function Footer() {
             Copyright © Creatt Wire UI Kit. All rights reserved.
           </p>
           <div className="flex gap-4 justify-center lg:justify-start">
-            <FaFacebookF />
-            <IoLogoTwitter />
+          <a href="https://www.facebook.com/YourPageName" target="_blank" rel="noopener noreferrer">
+          <FaFacebookF />
+          </a>
+          <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer">
+          <IoLogoTwitter />
+          </a>
           </div>
         </div>
       </div>

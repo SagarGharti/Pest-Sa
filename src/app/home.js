@@ -239,6 +239,7 @@ function ServicesArea() {
           image="residental-pest.png"
           buttonText1="Quote"
           buttonText2="Read More"
+          link="/residential"
         />
 
         <DynamicCard
@@ -248,6 +249,7 @@ function ServicesArea() {
           image="commercial-pest.png"
           buttonText1="Quote"
           buttonText2="Read More"
+          link="/commercial-residential"
         />
 
         <DynamicCard
@@ -257,6 +259,7 @@ function ServicesArea() {
           image="termite-pest.png"
           buttonText1="Quote"
           buttonText2="Read More"
+          link="/termite-inspection-residential"
         />
       </div>
     </div>

@@ -8,6 +8,7 @@ import Navbar from "../Components/Navbar";
 import { useState } from "react";
 import Message from "../Components/Message/Message";
 import MessageForm from "../Components/MessageForm/MessageForm";
+import Link from "next/link";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -23,15 +24,15 @@ function HeroSection() {
     <div className="relative w-full flex flex-col gap-8 items-center justify-center py-16 text-neutral-4 px-10">
       <div>
         <button className=" bg-secondary-9 px-6 py-2 rounded-full">
-          <sapn className="text-primary">Pest-SA</sapn> / Services
+          <sapn className="text-black">Pest-SA</sapn> / Services
         </button>
       </div>
-      <div className="text-center text-white">
-        <p className="text-title-sm xl:text-3xl font-bold ">
+      <div className="text-center">
+        <p className="text-title-sm xl:text-3xl font-bold text-black">
           Pest-SA services where quality meets commitment.
         </p>
       </div>
-      <div className="text-center text-white">
+      <div className="text-center text-black">
         <p className="text-lg ">
           we have worked with each other for a long period of time. Our focus is
           on building friendly{" "}
@@ -41,9 +42,11 @@ function HeroSection() {
         </p>
       </div>
       <div className="flex justify-center">
-        <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">
-          Contact us
-        </button>
+      <Link href="/contact">
+          <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">
+            Contact us
+          </button>
+        </Link>
       </div>
       <div className="absolute bottom-[-30px] right-8 transform -translate-x-1/2 z-20">
         <div className="relative" onClick={handleMessageClick}>
@@ -66,26 +69,34 @@ function ServicesArea() {
         <p className="text-secondary-2 text-2xl font-semibold">Services Area</p>
         <div className="bg-secondary-2 h-1 w-30 mt-4 mr-6"></div>
       </div>
-      <div className="flex flex-col gap-15 my-8 lg:flex-row">
+      <div className="flex gap-20 my-8 flex-col items-center lg:flex-row">
         <DynamicCard
           title="Residential Pest Control"
           description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... "
           image="residental-pest.png"
-          buttonText2="Show More"
+          buttonText1="Quote"
+          buttonText2="Read More"
+          link="/residential"
         />
 
         <DynamicCard
           title="Commercial Pest Control"
-          description="How we get the job done is just as important to our team, as the eradication and control of pests in your business. With a dedicated client service manager for..."
+          description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
+    "
           image="commercial-pest.png"
-          buttonText2="Show More"
+          buttonText1="Quote"
+          buttonText2="Read More"
+          link="/commercial-residential"
         />
 
         <DynamicCard
           title="Termite Inspection"
-          description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... "
+          description="Pest-SA Pest Control, believe in providing a safe and effective solution to prevent pest from entering you home. As nature lovers we love all insects just as long there not... 
+    "
           image="termite-pest.png"
-          buttonText2="Show More"
+          buttonText1="Quote"
+          buttonText2="Read More"
+          link="/termite-inspection-residential"
         />
       </div>
     </div>
@@ -103,7 +114,8 @@ function PestControlServices() {
       </div>
       <div className="flex justify-center gap-6 pt-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="flex gap-6 items-center">
+         <Link href="/termite-inspection-residential">
+         <div className="flex gap-6 items-center">
             <div className="bg-white flex justify-center items-center rounded-lg flex-shrink-0">
               <img src="/termite_square.png" alt="termite" />
             </div>
@@ -115,7 +127,9 @@ function PestControlServices() {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 items-center">
+         </Link>
+        <Link href="/ants-residential">
+        <div className="flex gap-6 items-center">
             <div className="flex justify-center items-center rounded-lg flex-shrink-0">
               <img src="/ants_square.png" alt="ant" />
             </div>
@@ -127,7 +141,9 @@ function PestControlServices() {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 items-center">
+        </Link>
+      <Link href="/bees-maps-residential">
+      <div className="flex gap-6 items-center">
             <div className=" flex justify-center items-center w-40 h-30 rounded-lg flex-shrink-0">
               <img src="/bees_sqaure.png" alt="bee" />
             </div>
@@ -139,7 +155,9 @@ function PestControlServices() {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 items-center">
+      </Link>
+       <Link href="/spider-pest-residential">
+       <div className="flex gap-6 items-center">
             <div className="flex justify-center items-center rounded-lg flex-shrink-0">
               <img src="/spider_square.png" alt="spider" />
             </div>
@@ -151,7 +169,9 @@ function PestControlServices() {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 items-center">
+       </Link>
+        <Link href="pest-sa-cockroaches-residential">
+        <div className="flex gap-6 items-center">
             <div className="flex justify-center items-center rounded-lg flex-shrink-0">
               <img src="/cockroaches_square.png" alt="cockroach" />
             </div>
@@ -163,7 +183,9 @@ function PestControlServices() {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 items-center">
+        </Link>
+         <Link href="/timber-residential">
+         <div className="flex gap-6 items-center">
             <div className="flex justify-center items-center rounded-lg flex-shrink-0">
               <img src="/timber_square.png" alt="timber" />
             </div>
@@ -175,7 +197,9 @@ function PestControlServices() {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 items-center">
+         </Link>
+       <Link href="/rodent-pest-residential">
+       <div className="flex gap-6 items-center">
             <div className="flex justify-center items-center rounded-lg flex-shrink-0">
               <img src="/rodents_square.png" alt="rodents" />
             </div>
@@ -187,7 +211,9 @@ function PestControlServices() {
               </p>
             </div>
           </div>
-          <div className="flex gap-6 items-center">
+       </Link>
+       <Link href="/birds-pest-residential">
+       <div className="flex gap-6 items-center">
             <div className="flex justify-center items-center rounded-lg flex-shrink-0">
               <img src="/birds_square.png" alt="birds" />
             </div>
@@ -199,6 +225,7 @@ function PestControlServices() {
               </p>
             </div>
           </div>
+       </Link>
         </div>
       </div>
     </div>

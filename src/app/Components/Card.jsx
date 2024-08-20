@@ -6,12 +6,15 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Link from 'next/link';
+
 
 export default function DynamicCard({
   title,
   description,
   image,
   buttonText2,
+  link,
 }) {
   return (
     <Card
@@ -51,20 +54,22 @@ export default function DynamicCard({
       </CardContent>
       <Box sx={{ flexGrow: 1 }} />
       <CardActions sx={{ justifyContent: "flex-end", padding: 2 }}>
-        <Button
-          size="small"
-          sx={{
-            backgroundColor: "#3CB54B",
-            paddingX: "16px",
-            paddingY: "8px",
-            color: "white",
-            "&:hover": {
-              backgroundColor: "#37A544",
-            },
-          }}
-        >
-          {buttonText2}
-        </Button>
+       <Link href={link} passHref>
+          <Button
+            size="small"
+            sx={{
+              backgroundColor: "#3CB54B",
+              paddingX: "16px",
+              paddingY: "8px",
+              color: "white",
+              "&:hover": {
+                backgroundColor: "#37A544",
+              },
+            }}
+          >
+            {buttonText2}
+          </Button>
+        </Link>
       </CardActions>
     </Card>
   );

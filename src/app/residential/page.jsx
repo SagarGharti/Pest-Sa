@@ -8,6 +8,7 @@ import { useState } from "react";
 import Message from "../Components/Message/Message";
 import Image from "next/image";
 import ResidentialSidebar from "../Components/ResidentialSidebar/index.jsx";
+import Link from "next/link";
 
 function HeroSection() {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -41,9 +42,11 @@ function HeroSection() {
         </p>
       </div>
       <div className="flex justify-center">
-        <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">
-          Contact us
-        </button>
+      <Link href="/contact">
+          <button className=" bg-primary-3 text-white py-3 rounded-lg px-6">
+            Contact us
+          </button>
+        </Link>
       </div>
       <div className="absolute -bottom-8 right-8 transform -translate-x-1/2 z-20">
         <div className="relative" onClick={handleMessageClick}>

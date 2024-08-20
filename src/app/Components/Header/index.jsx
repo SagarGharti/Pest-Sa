@@ -29,12 +29,12 @@ function Header() {
           </div>
         </div>
         <div className="flex gap-2 mt-2 md:mt-0">
-          <div className="bg-white rounded-full p-1">
-            <FaFacebookF className="h-5 w-5 md:h-6 md:w-6 text-neutral-2" />
-          </div>
-          <div className="bg-white rounded-full p-1">
+        <a href="https://www.facebook.com/YourPageName" target="_blank" rel="noopener noreferrer" className="bg-white rounded-full p-1">
+            <FaFacebookF className="h-5 w-5 md:h-6 md:w-6 text-neutral-2 flex items-center justify-center" />
+          </a>
+          <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer" className="bg-white rounded-full p-1">
             <IoLogoTwitter className="h-5 w-5 md:h-6 md:w-6 text-neutral-2" />
-          </div>
+          </a>
         </div>
       </div>
     </div>
